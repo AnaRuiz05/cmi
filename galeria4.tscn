@@ -1,0 +1,71 @@
+[gd_scene load_steps=14 format=3 uid="uid://7l27ju8qptst"]
+
+[ext_resource type="Texture2D" uid="uid://dilmq3uur3kfs" path="res://escenas/galeria/Horno_1 (1).png" id="1_co521"]
+[ext_resource type="Texture2D" uid="uid://msv01fjgw2mp" path="res://elementos/Botones (1).png" id="2_25ka7"]
+[ext_resource type="Texture2D" uid="uid://7i1mh30uyhvv" path="res://elementos/Botones.png" id="3_dv8ag"]
+[ext_resource type="Script" uid="uid://dt66xdemc6uwj" path="res://siguiente_4.gd" id="4_17hoh"]
+[ext_resource type="Script" uid="uid://cxml7kv8rs8uu" path="res://volver.gd" id="5_dv8ag"]
+
+[sub_resource type="Theme" id="Theme_h3ybf"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_mhg14"]
+texture = ExtResource("2_25ka7")
+region_rect = Rect2(1464, 1246, 584, 146)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_52esq"]
+texture = ExtResource("3_dv8ag")
+region_rect = Rect2(1464, 1246, 584, 146)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ffcj2"]
+texture = ExtResource("3_dv8ag")
+region_rect = Rect2(1464, 1246, 584, 146)
+
+[sub_resource type="Theme" id="Theme_17hoh"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_h3ybf"]
+texture = ExtResource("2_25ka7")
+region_rect = Rect2(1464, 1246, 584, 146)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_33ekb"]
+texture = ExtResource("3_dv8ag")
+region_rect = Rect2(1464, 1246, 584, 146)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5dihg"]
+texture = ExtResource("3_dv8ag")
+region_rect = Rect2(1464, 1246, 584, 146)
+
+[node name="Horno1(1)" type="Sprite2D"]
+position = Vector2(561.08, 398.375)
+scale = Vector2(0.318746, 0.319052)
+texture = ExtResource("1_co521")
+
+[node name="siguiente4" type="Button" parent="."]
+offset_left = 1121.52
+offset_top = -1149.42
+offset_right = 1279.52
+offset_bottom = -1106.42
+scale = Vector2(3.48594, 3.6416)
+theme = SubResource("Theme_h3ybf")
+theme_override_colors/font_color = Color(0.363707, 0.330877, 0.33908, 1)
+theme_override_styles/hover = SubResource("StyleBoxTexture_mhg14")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_52esq")
+theme_override_styles/normal = SubResource("StyleBoxTexture_ffcj2")
+text = "siguiente"
+script = ExtResource("4_17hoh")
+
+[node name="volver_gale4" type="Button" parent="."]
+offset_left = 1126.04
+offset_top = -916.387
+offset_right = 1284.04
+offset_bottom = -873.387
+scale = Vector2(3.48594, 3.6416)
+theme = SubResource("Theme_17hoh")
+theme_override_colors/font_color = Color(0.363707, 0.330877, 0.33908, 1)
+theme_override_styles/hover = SubResource("StyleBoxTexture_h3ybf")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_33ekb")
+theme_override_styles/normal = SubResource("StyleBoxTexture_5dihg")
+text = "Volver"
+script = ExtResource("5_dv8ag")
+
+[connection signal="pressed" from="siguiente4" to="siguiente4" method="_on_pressed"]
+[connection signal="pressed" from="volver_gale4" to="volver_gale4" method="_on_pressed"]

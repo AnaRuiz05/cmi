@@ -1,0 +1,67 @@
+[gd_scene load_steps=11 format=3 uid="uid://0x6bi2kpdgio"]
+
+[ext_resource type="Script" uid="uid://dowk56f6lgjjv" path="res://felicidades.gd" id="1_wqei4"]
+[ext_resource type="Texture2D" uid="uid://bbuxprhi6omwc" path="res://elementos/Ilustración_sin_título (2).png" id="2_wqei4"]
+[ext_resource type="Texture2D" uid="uid://comk22jgkkf0" path="res://Botonsiguiente2.png" id="3_n8wno"]
+[ext_resource type="Texture2D" uid="uid://dw14dailql0am" path="res://Botonsiguiente.png" id="4_r40mc"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_daqre"]
+texture = ExtResource("3_n8wno")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7uk10"]
+texture = ExtResource("4_r40mc")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_c306c"]
+texture = ExtResource("4_r40mc")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_v53ld"]
+texture = ExtResource("3_n8wno")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_naa5o"]
+texture = ExtResource("4_r40mc")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_anxia"]
+texture = ExtResource("4_r40mc")
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_wqei4")
+
+[node name="IlustraciónSinTítulo(2)" type="Sprite2D" parent="."]
+position = Vector2(561.5, 398)
+scale = Vector2(0.320125, 0.320968)
+texture = ExtResource("2_wqei4")
+
+[node name="volver" type="Button" parent="."]
+anchors_preset = -1
+anchor_bottom = 0.071
+offset_left = 214.0
+offset_top = 580.0
+offset_right = 480.0
+offset_bottom = 772.0
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(0.226707, 0.226707, 0.226707, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 21
+theme_override_styles/hover = SubResource("StyleBoxTexture_daqre")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_7uk10")
+theme_override_styles/normal = SubResource("StyleBoxTexture_c306c")
+text = "Volver al menú"
+
+[node name="repetir" type="Button" parent="."]
+offset_left = 635.0
+offset_top = 580.0
+offset_right = 894.0
+offset_bottom = 772.0
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(0.219501, 0.219501, 0.219501, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 21
+theme_override_styles/hover = SubResource("StyleBoxTexture_v53ld")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_naa5o")
+theme_override_styles/normal = SubResource("StyleBoxTexture_anxia")
+text = "Volver a jugar"
+
+[connection signal="pressed" from="volver" to="." method="_on_volver_pressed"]
+[connection signal="pressed" from="repetir" to="." method="_on_repetir_pressed"]

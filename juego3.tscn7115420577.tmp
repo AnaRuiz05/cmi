@@ -1,0 +1,265 @@
+[gd_scene load_steps=23 format=3 uid="uid://bqcaaxgcnmdot"]
+
+[ext_resource type="Script" uid="uid://b840lcatav6ra" path="res://hornoboton.gd" id="1_7s5p6"]
+[ext_resource type="Script" uid="uid://defl1ou1euiqu" path="res://horno2.gd" id="2_qfou4"]
+[ext_resource type="Texture2D" uid="uid://c3v1rexgm271o" path="res://elementos/Fondo_Cinta.png" id="2_xjypp"]
+[ext_resource type="Texture2D" uid="uid://bxh4xvhe3seum" path="res://elementos/Cinta.png" id="3_2oda1"]
+[ext_resource type="Texture2D" uid="uid://dh1ncuwmujptb" path="res://elementos/Horno_1.png" id="4_g3t1s"]
+[ext_resource type="Texture2D" uid="uid://b3us32y0qlu3c" path="res://elementos/2Horno_Botón_.png" id="5_2oda1"]
+[ext_resource type="Texture2D" uid="uid://b4ugsrm6n6q8t" path="res://elementos/Pizza_Aceituna.png" id="5_16q3e"]
+[ext_resource type="Texture2D" uid="uid://bg16q650eponu" path="res://elementos/Horno_2.png" id="5_g3t1s"]
+[ext_resource type="Texture2D" uid="uid://qvnjbl15rdh3" path="res://elementos/Horno_Botón_.png" id="6_g3t1s"]
+[ext_resource type="Texture2D" uid="uid://c4db40btoqxn2" path="res://elementos/Pizza_Albahaca.png" id="7_2vxvm"]
+[ext_resource type="Texture2D" uid="uid://dcrtpev2omcv8" path="res://elementos/Pizza_Champi.png" id="8_1smxd"]
+[ext_resource type="Texture2D" uid="uid://dw0ha5yeaxi7v" path="res://elementos/Pizza_Peperoni.png" id="9_qp5wf"]
+[ext_resource type="Texture2D" uid="uid://bva7nsx7ux17w" path="res://elementos/Pizza_Piña.png" id="10_mqbip"]
+
+[sub_resource type="Animation" id="Animation_qfou4"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Cinta:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(130, 402)]
+}
+
+[sub_resource type="Animation" id="Animation_16q3e"]
+resource_name = "juego2cinta"
+length = 7.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Cinta:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(130, 402), Vector2(995, 414)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_2kwmj"]
+_data = {
+&"RESET": SubResource("Animation_qfou4"),
+&"juego2cinta": SubResource("Animation_16q3e")
+}
+
+[sub_resource type="Animation" id="Animation_2vxvm"]
+resource_name = "pizzasmovimiento"
+length = 7.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("pizzamovimiento/PizzaPiña:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(171, 286), Vector2(873, 284)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("pizzamovimiento/PizzaPeperoni:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(171, 286), Vector2(878, 286)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("pizzamovimiento/PizzaChampi:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(171, 286), Vector2(876, 284)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("pizzamovimiento/PizzaAlbahaca:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(171, 286), Vector2(872, 283)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("pizzamovimiento/PizzaAceituna:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(171, 286), Vector2(881, 284)]
+}
+
+[sub_resource type="Animation" id="Animation_1smxd"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("pizzamovimiento/PizzaPiña:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(171, 286)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("pizzamovimiento/PizzaPeperoni:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(171, 286)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("pizzamovimiento/PizzaChampi:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(171, 286)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("pizzamovimiento/PizzaAlbahaca:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(171, 286)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("pizzamovimiento/PizzaAceituna:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(171, 286)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_qp5wf"]
+_data = {
+&"RESET": SubResource("Animation_1smxd"),
+&"pizzasmovimiento": SubResource("Animation_2vxvm")
+}
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7s5p6"]
+texture = ExtResource("5_2oda1")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xjypp"]
+texture = ExtResource("6_g3t1s")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2oda1"]
+texture = ExtResource("6_g3t1s")
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_7s5p6")
+
+[node name="cintamovimiento" type="AnimationPlayer" parent="."]
+root_node = NodePath("FondoCinta")
+libraries = {
+&"": SubResource("AnimationLibrary_2kwmj")
+}
+script = ExtResource("2_qfou4")
+
+[node name="FondoCinta" type="Sprite2D" parent="cintamovimiento"]
+position = Vector2(563.5, 399)
+scale = Vector2(0.321266, 0.321774)
+texture = ExtResource("2_xjypp")
+
+[node name="Cinta" type="Sprite2D" parent="cintamovimiento"]
+position = Vector2(130, 402)
+scale = Vector2(0.591505, 0.425403)
+texture = ExtResource("3_2oda1")
+
+[node name="Horno1" type="Sprite2D" parent="cintamovimiento"]
+position = Vector2(563.5, 399)
+scale = Vector2(0.321266, 0.321774)
+texture = ExtResource("4_g3t1s")
+
+[node name="pizzamovimiento" type="AnimationPlayer" parent="cintamovimiento"]
+libraries = {
+&"": SubResource("AnimationLibrary_qp5wf")
+}
+
+[node name="PizzaAceituna" type="Sprite2D" parent="cintamovimiento/pizzamovimiento"]
+position = Vector2(171, 286)
+scale = Vector2(0.24437, 0.245464)
+texture = ExtResource("5_16q3e")
+
+[node name="PizzaAlbahaca" type="Sprite2D" parent="cintamovimiento/pizzamovimiento"]
+position = Vector2(171, 286)
+scale = Vector2(0.244584, 0.245161)
+texture = ExtResource("7_2vxvm")
+
+[node name="PizzaChampi" type="Sprite2D" parent="cintamovimiento/pizzamovimiento"]
+position = Vector2(171, 286)
+scale = Vector2(0.244584, 0.245161)
+texture = ExtResource("8_1smxd")
+
+[node name="PizzaPeperoni" type="Sprite2D" parent="cintamovimiento/pizzamovimiento"]
+position = Vector2(171, 286)
+scale = Vector2(0.244584, 0.245161)
+texture = ExtResource("9_qp5wf")
+
+[node name="PizzaPiña" type="Sprite2D" parent="cintamovimiento/pizzamovimiento"]
+position = Vector2(171, 286)
+scale = Vector2(0.244584, 0.245161)
+texture = ExtResource("10_mqbip")
+
+[node name="Horno2" type="Sprite2D" parent="cintamovimiento"]
+position = Vector2(563.5, 399)
+scale = Vector2(0.321266, 0.321774)
+texture = ExtResource("5_g3t1s")
+
+[node name="hornoboton" type="Button" parent="cintamovimiento"]
+offset_left = 357.0
+offset_top = 26.0
+offset_right = 779.0
+offset_bottom = 624.0
+theme_override_styles/hover = SubResource("StyleBoxTexture_7s5p6")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_xjypp")
+theme_override_styles/normal = SubResource("StyleBoxTexture_2oda1")
+
+[connection signal="pressed" from="cintamovimiento/hornoboton" to="." method="_on_hornoboton_pressed"]

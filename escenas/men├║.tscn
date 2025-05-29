@@ -1,0 +1,158 @@
+[gd_scene load_steps=16 format=3 uid="uid://sevbhnstooa6"]
+
+[ext_resource type="Script" uid="uid://cqhuk4s6eopk6" path="res://escenas/animation_player.gd" id="1_nr5xo"]
+[ext_resource type="Texture2D" uid="uid://dcxa8llc6ha0x" path="res://elementos/Cielo (1).png" id="2_atte1"]
+[ext_resource type="Texture2D" uid="uid://bfurxgf3usedx" path="res://elementos/Nubes_Menú_.png" id="3_fjgg3"]
+[ext_resource type="Texture2D" uid="uid://61e36piunk6" path="res://escenas/Menú_ (1).png" id="4_auxau"]
+[ext_resource type="Texture2D" uid="uid://gahwsmjddbg0" path="res://escenas/Interior.png" id="5_atte1"]
+[ext_resource type="Texture2D" uid="uid://msv01fjgw2mp" path="res://elementos/Botones (1).png" id="6_auxau"]
+[ext_resource type="Texture2D" uid="uid://7i1mh30uyhvv" path="res://elementos/Botones.png" id="7_qq6tx"]
+[ext_resource type="Script" uid="uid://dsxjfi73p2pym" path="res://escenas/saltar.gd" id="8_etxuq"]
+
+[sub_resource type="Animation" id="Animation_etxuq"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Menú(1):position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(560.5, 396)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../Menú(1):scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.32078, 0.320565)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../Cielo(1)2:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_qq6tx"]
+resource_name = "teaser ana"
+length = 3.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Menú(1):position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.666667, 2.7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(560.5, 396), Vector2(577, 18)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../Menú(1):scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(-0.166667, 0.666667, 2.66667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0.32078, 0.320565), Vector2(0.32078, 0.320565), Vector2(0.98476, 0.984098)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../Cielo(1)2:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.0333333, 2.43333, 3.36667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_lgym5"]
+_data = {
+&"RESET": SubResource("Animation_etxuq"),
+&"teaser ana": SubResource("Animation_qq6tx")
+}
+
+[sub_resource type="Theme" id="Theme_lgym5"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ohbm0"]
+texture = ExtResource("6_auxau")
+region_rect = Rect2(1464, 1246, 584, 146)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_sxqa3"]
+texture = ExtResource("7_qq6tx")
+region_rect = Rect2(1464, 1246, 584, 146)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_pugjq"]
+texture = ExtResource("7_qq6tx")
+region_rect = Rect2(1464, 1246, 584, 146)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("Cielo(1)")
+libraries = {
+&"": SubResource("AnimationLibrary_lgym5")
+}
+script = ExtResource("1_nr5xo")
+
+[node name="Cielo(1)" type="Sprite2D" parent="AnimationPlayer"]
+position = Vector2(562, 398)
+scale = Vector2(0.320411, 0.320968)
+texture = ExtResource("2_atte1")
+
+[node name="NubesMenú" type="Sprite2D" parent="AnimationPlayer"]
+position = Vector2(557, 351)
+scale = Vector2(0.389538, 0.321774)
+texture = ExtResource("3_fjgg3")
+
+[node name="Menú(1)" type="Sprite2D" parent="AnimationPlayer"]
+position = Vector2(560.5, 396)
+scale = Vector2(0.32078, 0.320565)
+texture = ExtResource("4_auxau")
+
+[node name="Cielo(1)2" type="Sprite2D" parent="AnimationPlayer"]
+position = Vector2(259, 173)
+texture = ExtResource("2_atte1")
+
+[node name="Interior" type="Sprite2D" parent="AnimationPlayer"]
+visible = false
+position = Vector2(526, 692)
+texture = ExtResource("5_atte1")
+
+[node name="saltar" type="Button" parent="AnimationPlayer"]
+offset_left = 938.0
+offset_top = 40.0
+offset_right = 1096.0
+offset_bottom = 83.0
+theme = SubResource("Theme_lgym5")
+theme_override_colors/font_color = Color(0.363707, 0.330877, 0.33908, 1)
+theme_override_styles/hover = SubResource("StyleBoxTexture_ohbm0")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_sxqa3")
+theme_override_styles/normal = SubResource("StyleBoxTexture_pugjq")
+text = "Saltar"
+script = ExtResource("8_etxuq")
+
+[connection signal="animation_finished" from="AnimationPlayer" to="AnimationPlayer" method="_on_animation_finished"]
+[connection signal="pressed" from="AnimationPlayer/saltar" to="AnimationPlayer/saltar" method="_on_pressed"]

@@ -1,0 +1,296 @@
+[gd_scene load_steps=28 format=3 uid="uid://bhjwhra7ndhq7"]
+
+[ext_resource type="Script" uid="uid://cmgb5xjhctlan" path="res://escenas/ingredientes.gd" id="1_js12v"]
+[ext_resource type="Texture2D" uid="uid://7xvrx1nla6co" path="res://escenas/Zona_Montaje.png" id="2_fyq7h"]
+[ext_resource type="Texture2D" uid="uid://clldw53l3iaca" path="res://elementos/Albahaca.png" id="3_gnkin"]
+[ext_resource type="Texture2D" uid="uid://dyg1djmeik1wf" path="res://elementos/Aceituna.png" id="4_8a67h"]
+[ext_resource type="Texture2D" uid="uid://cxnr646bvayav" path="res://elementos/Champiñones.png" id="5_fl5ay"]
+[ext_resource type="Texture2D" uid="uid://b350m4pxpuibl" path="res://elementos/Peperoni.png" id="6_dmnrf"]
+[ext_resource type="Texture2D" uid="uid://pm6t0j0o6erw" path="res://elementos/Masa.png" id="7_nhfrb"]
+[ext_resource type="Texture2D" uid="uid://bix615kok087d" path="res://elementos/Salsa.png" id="8_85xrw"]
+[ext_resource type="Texture2D" uid="uid://02lo7gskjp5x" path="res://elementos/Deshacer.png" id="9_8li7m"]
+[ext_resource type="Texture2D" uid="uid://p04wdgyjg75j" path="res://elementos/Queso.png" id="10_an7e7"]
+[ext_resource type="Texture2D" uid="uid://cd2nduvpdpqph" path="res://elementos/Piña.png" id="11_ddp5x"]
+[ext_resource type="Texture2D" uid="uid://dwr1ft2wnh2oc" path="res://elementos/Ilustración_sin_título (1).png" id="12_ggvlp"]
+[ext_resource type="Texture2D" uid="uid://yev5fjbiepmv" path="res://elementos/Pan_Pizza.png" id="13_fl5ay"]
+[ext_resource type="Texture2D" uid="uid://dpnf2qcm8bnrc" path="res://elementos/Salsa_Pizza.png" id="14_dmnrf"]
+[ext_resource type="Texture2D" uid="uid://bpcxoi8i11lrv" path="res://elementos/Queso_Pizza.png" id="15_nhfrb"]
+[ext_resource type="Texture2D" uid="uid://cbu4wxebhwvyk" path="res://elementos/Peperoni_Pizza.png" id="16_85xrw"]
+[ext_resource type="Texture2D" uid="uid://dcxa8llc6ha0x" path="res://elementos/Cielo (1).png" id="17_dmnrf"]
+[ext_resource type="Texture2D" uid="uid://msv01fjgw2mp" path="res://elementos/Botones (1).png" id="18_8li7m"]
+[ext_resource type="Texture2D" uid="uid://7i1mh30uyhvv" path="res://elementos/Botones.png" id="19_an7e7"]
+[ext_resource type="Script" uid="uid://dsxjfi73p2pym" path="res://escenas/saltar.gd" id="20_ddp5x"]
+
+[sub_resource type="Animation" id="Animation_1r1rg"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ingredientes/IlustraciónSinTítulo(1):position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(988, 897)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ingredientes/PanPizza:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ingredientes/SalsaPizza:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("ingredientes/QuesoPizza:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("ingredientes/PeperoniPizza:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("ingredientes/Cielo(1):modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_s24tx"]
+resource_name = "ingredientes"
+length = 8.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ingredientes/IlustraciónSinTítulo(1):position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.0666667, 1.03333, 1.9, 2.4, 3.36667, 3.86667, 4.86667, 5.73333, 6.73333, 7.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(988, 897), Vector2(302, 429), Vector2(302, 429), Vector2(309, 541), Vector2(309, 541), Vector2(305, 651), Vector2(305, 651), Vector2(323, 235), Vector2(323, 235), Vector2(822, 600)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ingredientes/PanPizza:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.26667, 1.86667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ingredientes/SalsaPizza:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.0333333, 2.53333, 3.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("ingredientes/QuesoPizza:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.0333333, 4.06667, 4.73333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("ingredientes/PeperoniPizza:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 6.03333, 6.63333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("ingredientes/Cielo(1):modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 7.76667, 8.46667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_vtfxo"]
+_data = {
+&"RESET": SubResource("Animation_1r1rg"),
+&"ingredientes": SubResource("Animation_s24tx")
+}
+
+[sub_resource type="Theme" id="Theme_ggvlp"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_s24tx"]
+texture = ExtResource("18_8li7m")
+region_rect = Rect2(1464, 1246, 584, 146)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1r1rg"]
+texture = ExtResource("19_an7e7")
+region_rect = Rect2(1464, 1246, 584, 146)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vtfxo"]
+texture = ExtResource("19_an7e7")
+region_rect = Rect2(1464, 1246, 584, 146)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="ingredientes" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_vtfxo")
+}
+script = ExtResource("1_js12v")
+
+[node name="ZonaMontaje" type="Sprite2D" parent="ingredientes"]
+position = Vector2(561, 395.5)
+scale = Vector2(0.31927, 0.320565)
+texture = ExtResource("2_fyq7h")
+
+[node name="Albahaca" type="Sprite2D" parent="ingredientes"]
+position = Vector2(560, 411)
+scale = Vector2(0.323092, 0.340726)
+texture = ExtResource("3_gnkin")
+
+[node name="Aceituna" type="Sprite2D" parent="ingredientes"]
+position = Vector2(545, 379)
+scale = Vector2(0.283481, 0.305721)
+texture = ExtResource("4_8a67h")
+
+[node name="Champiñones" type="Sprite2D" parent="ingredientes"]
+position = Vector2(560, 398)
+scale = Vector2(0.320565, 0.320565)
+texture = ExtResource("5_fl5ay")
+
+[node name="Peperoni" type="Sprite2D" parent="ingredientes"]
+position = Vector2(584, 400)
+scale = Vector2(0.336338, 0.326613)
+texture = ExtResource("6_dmnrf")
+
+[node name="Masa" type="Sprite2D" parent="ingredientes"]
+position = Vector2(561.508, 396.25)
+scale = Vector2(0.31996, 0.31996)
+texture = ExtResource("7_nhfrb")
+
+[node name="Salsa" type="Sprite2D" parent="ingredientes"]
+position = Vector2(562.005, 397)
+scale = Vector2(0.319355, 0.319355)
+texture = ExtResource("8_85xrw")
+
+[node name="Deshacer" type="Sprite2D" parent="ingredientes"]
+position = Vector2(551, 413)
+scale = Vector2(0.31202, 0.302419)
+texture = ExtResource("9_8li7m")
+
+[node name="Queso" type="Sprite2D" parent="ingredientes"]
+position = Vector2(557, 398)
+scale = Vector2(0.316734, 0.316734)
+texture = ExtResource("10_an7e7")
+
+[node name="Piña" type="Sprite2D" parent="ingredientes"]
+position = Vector2(563, 396)
+scale = Vector2(0.332815, 0.328629)
+texture = ExtResource("11_ddp5x")
+
+[node name="PanPizza" type="Sprite2D" parent="ingredientes"]
+position = Vector2(561.139, 398.125)
+scale = Vector2(0.320262, 0.320262)
+texture = ExtResource("13_fl5ay")
+
+[node name="SalsaPizza" type="Sprite2D" parent="ingredientes"]
+position = Vector2(561, 398)
+scale = Vector2(0.318952, 0.318952)
+texture = ExtResource("14_dmnrf")
+
+[node name="QuesoPizza" type="Sprite2D" parent="ingredientes"]
+position = Vector2(561, 397)
+scale = Vector2(0.31927, 0.319355)
+texture = ExtResource("15_nhfrb")
+
+[node name="PeperoniPizza" type="Sprite2D" parent="ingredientes"]
+position = Vector2(561.416, 397.5)
+scale = Vector2(0.319507, 0.320565)
+texture = ExtResource("16_85xrw")
+
+[node name="IlustraciónSinTítulo(1)" type="Sprite2D" parent="ingredientes"]
+position = Vector2(988, 897)
+scale = Vector2(0.32379, 0.32379)
+texture = ExtResource("12_ggvlp")
+
+[node name="Cielo(1)" type="Sprite2D" parent="ingredientes"]
+position = Vector2(519, 445)
+texture = ExtResource("17_dmnrf")
+
+[node name="saltar_3" type="Button" parent="ingredientes"]
+offset_left = 938.0
+offset_top = 40.0
+offset_right = 1096.0
+offset_bottom = 83.0
+theme = SubResource("Theme_ggvlp")
+theme_override_colors/font_color = Color(0.363707, 0.330877, 0.33908, 1)
+theme_override_styles/hover = SubResource("StyleBoxTexture_s24tx")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_1r1rg")
+theme_override_styles/normal = SubResource("StyleBoxTexture_vtfxo")
+text = "Saltar"
+script = ExtResource("20_ddp5x")
+
+[connection signal="animation_finished" from="ingredientes" to="ingredientes" method="_on_animation_finished"]
+[connection signal="pressed" from="ingredientes/saltar_3" to="ingredientes/saltar_3" method="_on_pressed"]

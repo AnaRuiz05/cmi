@@ -1,0 +1,279 @@
+[gd_scene load_steps=62 format=3 uid="uid://bd4nphu8hbupj"]
+
+[ext_resource type="Texture2D" uid="uid://dlfw32anhij15" path="res://elementos/Zona_Montaje.png" id="1_b2v3h"]
+[ext_resource type="Script" uid="uid://8q6t6wp17jb0" path="res://node_2d.gd" id="1_vd38o"]
+[ext_resource type="Texture2D" uid="uid://cq2xpwofpp7o0" path="res://elementos/2Peperoni_Botón_.png" id="3_fyifk"]
+[ext_resource type="Texture2D" uid="uid://cbu4wxebhwvyk" path="res://elementos/Peperoni_Pizza.png" id="3_mepqw"]
+[ext_resource type="Texture2D" uid="uid://b0p7upmlcdmfo" path="res://elementos/Peperoni_Botón_.png" id="3_v2ipr"]
+[ext_resource type="Texture2D" uid="uid://bpcxoi8i11lrv" path="res://elementos/Queso_Pizza.png" id="4_mepqw"]
+[ext_resource type="Texture2D" uid="uid://yev5fjbiepmv" path="res://elementos/Pan_Pizza.png" id="4_u3ye4"]
+[ext_resource type="Texture2D" uid="uid://dpnf2qcm8bnrc" path="res://elementos/Salsa_Pizza.png" id="4_uob6y"]
+[ext_resource type="Texture2D" uid="uid://d2k5xejvutr3k" path="res://elementos/2Masa_Botón.png" id="6_7b6gk"]
+[ext_resource type="Texture2D" uid="uid://mhwf02wdgb8n" path="res://elementos/Más_Boton.png" id="7_mriwj"]
+[ext_resource type="Texture2D" uid="uid://46ir7b8xf1vh" path="res://elementos/Aceituna_Pizza.png" id="8_yp8hv"]
+[ext_resource type="Texture2D" uid="uid://c0lhqmshdb1x1" path="res://elementos/Piña_Pizza.png" id="9_c3rst"]
+[ext_resource type="Texture2D" uid="uid://k3r6byt0ito1" path="res://elementos/Aceituna_Botón_.png" id="9_fyifk"]
+[ext_resource type="Texture2D" uid="uid://hny6u0h18qr4" path="res://elementos/Albahaca_Pizza.png" id="10_jnuna"]
+[ext_resource type="Texture2D" uid="uid://bcym6hmqgy1w0" path="res://elementos/2Aceituna_Botón_.png" id="10_xen5e"]
+[ext_resource type="Texture2D" uid="uid://l2v6k1d4ry2m" path="res://elementos/Champis_Pizza.png" id="11_2gka2"]
+[ext_resource type="Texture2D" uid="uid://dsqofss8ai80t" path="res://elementos/Piña_Botón_.png" id="12_6wi5v"]
+[ext_resource type="Texture2D" uid="uid://bkl11ediep2wq" path="res://elementos/2Queso_Botón.png" id="12_gscns"]
+[ext_resource type="Texture2D" uid="uid://gpj8kak17o47" path="res://elementos/2Salsa_Botón.png" id="13_g8nlw"]
+[ext_resource type="Texture2D" uid="uid://dyr5q6qogh3iy" path="res://Queso_Botón.png" id="13_n42xt"]
+[ext_resource type="Texture2D" uid="uid://nh7mrpobmtu2" path="res://elementos/Albahaca_Botón.png" id="14_0v6qq"]
+[ext_resource type="Texture2D" uid="uid://ymimiy887shi" path="res://elementos/2Piña_Botón_.png" id="14_5ndj5"]
+[ext_resource type="Texture2D" uid="uid://cn2q3tkfy21kf" path="res://elementos/Champiñones_Botón_.png" id="15_06l8k"]
+[ext_resource type="Texture2D" uid="uid://2wsnl2r3chjo" path="res://elementos/Salsa_Botón.png" id="15_7hg1u"]
+[ext_resource type="Texture2D" uid="uid://dd14bpaqwcbok" path="res://elementos/2Deshacer_Botón.png" id="16_n42xt"]
+[ext_resource type="Texture2D" uid="uid://csmkui2qjq4uu" path="res://elementos/2Albahaca_Botón.png" id="17_d316j"]
+[ext_resource type="Texture2D" uid="uid://shkpqjhsrvh2" path="res://elementos/2Champiñones_Botón_.png" id="19_4crxl"]
+[ext_resource type="Texture2D" uid="uid://drosbv32ls8r7" path="res://elementos/Deshacer_Botón.png" id="19_cdb6d"]
+[ext_resource type="Texture2D" uid="uid://comk22jgkkf0" path="res://Botonsiguiente2.png" id="29_7hg1u"]
+[ext_resource type="Script" uid="uid://ckb0mo3d170a4" path="res://prueba horno.gd" id="29_g8nlw"]
+[ext_resource type="Texture2D" uid="uid://dw14dailql0am" path="res://Botonsiguiente.png" id="30_cdb6d"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xen5e"]
+texture = ExtResource("3_fyifk")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5ndj5"]
+texture = ExtResource("3_v2ipr")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_d316j"]
+texture = ExtResource("3_v2ipr")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_b04e1"]
+texture = ExtResource("6_7b6gk")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xwddv"]
+texture = ExtResource("7_mriwj")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_y75nl"]
+texture = ExtResource("7_mriwj")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_02fjr"]
+texture = ExtResource("12_gscns")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_a5mdl"]
+texture = ExtResource("13_n42xt")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jdeo4"]
+texture = ExtResource("13_n42xt")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tbylc"]
+texture = ExtResource("13_g8nlw")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_o5h4u"]
+texture = ExtResource("15_7hg1u")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0ldsc"]
+texture = ExtResource("15_7hg1u")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4crxl"]
+texture = ExtResource("10_xen5e")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kg5l0"]
+texture = ExtResource("9_fyifk")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7b6gk"]
+texture = ExtResource("9_fyifk")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_d2sf8"]
+texture = ExtResource("16_n42xt")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3pp7r"]
+texture = ExtResource("19_cdb6d")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tpxko"]
+texture = ExtResource("19_cdb6d")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_mriwj"]
+texture = ExtResource("14_5ndj5")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gscns"]
+texture = ExtResource("12_6wi5v")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_g8nlw"]
+texture = ExtResource("12_6wi5v")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_n42xt"]
+texture = ExtResource("17_d316j")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7hg1u"]
+texture = ExtResource("14_0v6qq")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cdb6d"]
+texture = ExtResource("14_0v6qq")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ydd26"]
+texture = ExtResource("19_4crxl")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ah1fo"]
+texture = ExtResource("15_06l8k")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_d2re5"]
+texture = ExtResource("15_06l8k")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_s6dob"]
+texture = ExtResource("29_7hg1u")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7gfjy"]
+texture = ExtResource("30_cdb6d")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ayho0"]
+texture = ExtResource("30_cdb6d")
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_vd38o")
+
+[node name="ZonaMontaje" type="Sprite2D" parent="."]
+position = Vector2(561.5, 397)
+scale = Vector2(0.320125, 0.320161)
+texture = ExtResource("1_b2v3h")
+
+[node name="botonpeperoni" type="Button" parent="."]
+offset_left = 23.0
+offset_top = 83.0
+offset_right = 230.0
+offset_bottom = 228.0
+theme_override_styles/hover = SubResource("StyleBoxTexture_xen5e")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_5ndj5")
+theme_override_styles/normal = SubResource("StyleBoxTexture_d316j")
+
+[node name="botonmasa" type="Button" parent="."]
+offset_left = 70.0
+offset_top = 322.0
+offset_right = 137.0
+offset_bottom = 373.0
+theme_override_styles/hover = SubResource("StyleBoxTexture_b04e1")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_xwddv")
+theme_override_styles/normal = SubResource("StyleBoxTexture_y75nl")
+
+[node name="PanPizza" type="Sprite2D" parent="."]
+position = Vector2(561.5, 397)
+scale = Vector2(0.320125, 0.320161)
+texture = ExtResource("4_u3ye4")
+
+[node name="SalsaPizza" type="Sprite2D" parent="."]
+position = Vector2(561.5, 397)
+scale = Vector2(0.320125, 0.320161)
+texture = ExtResource("4_uob6y")
+
+[node name="QuesoPizza" type="Sprite2D" parent="."]
+position = Vector2(561.5, 397)
+scale = Vector2(0.320125, 0.320161)
+texture = ExtResource("4_mepqw")
+
+[node name="PeperoniPizza" type="Sprite2D" parent="."]
+position = Vector2(561.5, 397)
+scale = Vector2(0.320125, 0.320161)
+texture = ExtResource("3_mepqw")
+
+[node name="botonqueso" type="Button" parent="."]
+offset_left = 62.0
+offset_top = 548.0
+offset_right = 149.0
+offset_bottom = 603.0
+theme_override_styles/hover = SubResource("StyleBoxTexture_02fjr")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_a5mdl")
+theme_override_styles/normal = SubResource("StyleBoxTexture_jdeo4")
+
+[node name="botonsalsa" type="Button" parent="."]
+offset_left = 62.0
+offset_top = 434.0
+offset_right = 149.0
+offset_bottom = 487.0
+theme_override_styles/hover = SubResource("StyleBoxTexture_tbylc")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_o5h4u")
+theme_override_styles/normal = SubResource("StyleBoxTexture_0ldsc")
+
+[node name="botonaceituna" type="Button" parent="."]
+offset_left = 247.0
+offset_top = 90.0
+offset_right = 444.0
+offset_bottom = 227.0
+theme_override_styles/hover = SubResource("StyleBoxTexture_4crxl")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_kg5l0")
+theme_override_styles/normal = SubResource("StyleBoxTexture_7b6gk")
+
+[node name="deshacer" type="Button" parent="."]
+offset_left = 62.0
+offset_top = 657.0
+offset_right = 149.0
+offset_bottom = 717.0
+theme_override_styles/hover = SubResource("StyleBoxTexture_d2sf8")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_3pp7r")
+theme_override_styles/normal = SubResource("StyleBoxTexture_tpxko")
+
+[node name="AceitunaPizza" type="Sprite2D" parent="."]
+position = Vector2(561.5, 397)
+scale = Vector2(0.320125, 0.320161)
+texture = ExtResource("8_yp8hv")
+
+[node name="PiñaPizza" type="Sprite2D" parent="."]
+position = Vector2(560.5, 397)
+scale = Vector2(0.320696, 0.320161)
+texture = ExtResource("9_c3rst")
+
+[node name="botonpiña" type="Button" parent="."]
+offset_left = 462.0
+offset_top = 90.0
+offset_right = 670.0
+offset_bottom = 228.0
+theme_override_styles/hover = SubResource("StyleBoxTexture_mriwj")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_gscns")
+theme_override_styles/normal = SubResource("StyleBoxTexture_g8nlw")
+
+[node name="AlbahacaPizza" type="Sprite2D" parent="."]
+position = Vector2(563, 394.25)
+scale = Vector2(0.31927, 0.317944)
+texture = ExtResource("10_jnuna")
+
+[node name="botonalbahaca" type="Button" parent="."]
+offset_left = 686.0
+offset_top = 83.0
+offset_right = 886.0
+offset_bottom = 227.0
+theme_override_styles/hover = SubResource("StyleBoxTexture_n42xt")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_7hg1u")
+theme_override_styles/normal = SubResource("StyleBoxTexture_cdb6d")
+
+[node name="botonchampis" type="Button" parent="."]
+offset_left = 908.0
+offset_top = 83.0
+offset_right = 1104.0
+offset_bottom = 228.0
+theme_override_styles/hover = SubResource("StyleBoxTexture_ydd26")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_ah1fo")
+theme_override_styles/normal = SubResource("StyleBoxTexture_d2re5")
+
+[node name="ChampisPizza" type="Sprite2D" parent="."]
+position = Vector2(563, 397)
+scale = Vector2(0.31927, 0.320161)
+texture = ExtResource("11_2gka2")
+
+[node name="siguienteingredientes" type="Button" parent="."]
+offset_left = 900.0
+offset_top = 228.0
+offset_right = 1091.0
+offset_bottom = 379.0
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(0.172833, 0.172833, 0.172833, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_styles/hover = SubResource("StyleBoxTexture_s6dob")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_7gfjy")
+theme_override_styles/normal = SubResource("StyleBoxTexture_ayho0")
+text = "Siguiente"
+script = ExtResource("29_g8nlw")
+
+[connection signal="pressed" from="botonpeperoni" to="." method="_on_pepperoni_pressed"]
+[connection signal="pressed" from="botonmasa" to="." method="_on_botonmasa_pressed"]
+[connection signal="pressed" from="botonqueso" to="." method="_on_botonqueso_pressed"]
+[connection signal="pressed" from="botonsalsa" to="." method="_on_botonsalsa_pressed"]
+[connection signal="pressed" from="botonaceituna" to="." method="_on_hornoboton_pressed"]
+[connection signal="pressed" from="botonaceituna" to="." method="_on_botonaceituna_pressed"]
+[connection signal="pressed" from="deshacer" to="." method="_on_deshacer_pressed"]
+[connection signal="pressed" from="botonpiña" to="." method="_on_botonpiña_pressed"]
+[connection signal="pressed" from="botonalbahaca" to="." method="_on_botonalbahaca_pressed"]
+[connection signal="pressed" from="botonchampis" to="." method="_on_botonchampis_pressed"]
+[connection signal="pressed" from="siguienteingredientes" to="siguienteingredientes" method="_on_pressed"]

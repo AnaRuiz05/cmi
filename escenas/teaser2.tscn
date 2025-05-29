@@ -1,0 +1,189 @@
+[gd_scene load_steps=18 format=3 uid="uid://dgj72bjclo8hu"]
+
+[ext_resource type="Script" uid="uid://box80sptgd4yh" path="res://escenas/ana.gd" id="1_p2q3k"]
+[ext_resource type="Texture2D" uid="uid://gahwsmjddbg0" path="res://escenas/Interior.png" id="1_p7qag"]
+[ext_resource type="Texture2D" uid="uid://bjlgtha35cqe6" path="res://elementos/Personaje_1 (1).png" id="2_ulm2p"]
+[ext_resource type="Texture2D" uid="uid://bqc8yd6bnae1k" path="res://elementos/Encimera.png" id="3_p2q3k"]
+[ext_resource type="Texture2D" uid="uid://c5md8bgfdti3s" path="res://elementos/Bocadillo.png" id="5_d3t58"]
+[ext_resource type="Texture2D" uid="uid://dwr1ft2wnh2oc" path="res://elementos/Ilustración_sin_título (1).png" id="6_25y1t"]
+[ext_resource type="Texture2D" uid="uid://dcxa8llc6ha0x" path="res://elementos/Cielo (1).png" id="6_d3t58"]
+[ext_resource type="Texture2D" uid="uid://msv01fjgw2mp" path="res://elementos/Botones (1).png" id="8_5kcda"]
+[ext_resource type="Texture2D" uid="uid://7i1mh30uyhvv" path="res://elementos/Botones.png" id="9_qyfn5"]
+[ext_resource type="Script" uid="uid://dsxjfi73p2pym" path="res://escenas/saltar.gd" id="10_kjk02"]
+
+[sub_resource type="Animation" id="Animation_hvb5u"]
+length = 6.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ana/Personaje1(1):position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(555, 822)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ana/Bocadillo:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ana/Cielo(1):modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("ana/IlustraciónSinTítulo(1):position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(659, 907)]
+}
+
+[sub_resource type="Animation" id="Animation_25y1t"]
+resource_name = "escena2"
+length = 4.4
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ana/Personaje1(1):position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.0333333, 0.933333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(555, 822), Vector2(562, 430)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ana/Bocadillo:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.133333, 2.56667, 3.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ana/Cielo(1):modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.0333333, 3.7, 4.4),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(0, 0, 0, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("ana/IlustraciónSinTítulo(1):position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.966667, 1.93333, 2.66667, 3.63333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(659, 907), Vector2(659, 907), Vector2(492, 505), Vector2(492, 505), Vector2(768, 259)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_w4isi"]
+_data = {
+&"RESET": SubResource("Animation_hvb5u"),
+&"escena2": SubResource("Animation_25y1t")
+}
+
+[sub_resource type="Theme" id="Theme_twwgl"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vljly"]
+texture = ExtResource("8_5kcda")
+region_rect = Rect2(1464, 1246, 584, 146)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_riiv8"]
+texture = ExtResource("9_qyfn5")
+region_rect = Rect2(1464, 1246, 584, 146)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0trt3"]
+texture = ExtResource("9_qyfn5")
+region_rect = Rect2(1464, 1246, 584, 146)
+
+[node name="Node2D" type="Node2D"]
+metadata/_edit_horizontal_guides_ = [-15.0]
+
+[node name="ana" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_w4isi")
+}
+script = ExtResource("1_p2q3k")
+
+[node name="Interior" type="Sprite2D" parent="ana"]
+position = Vector2(562.72, 399.75)
+scale = Vector2(0.32057, 0.317944)
+texture = ExtResource("1_p7qag")
+
+[node name="Personaje1(1)" type="Sprite2D" parent="ana"]
+position = Vector2(555, 822)
+scale = Vector2(0.337514, 0.347581)
+texture = ExtResource("2_ulm2p")
+
+[node name="Encimera" type="Sprite2D" parent="ana"]
+position = Vector2(562.118, 398.25)
+scale = Vector2(0.320913, 0.31875)
+texture = ExtResource("3_p2q3k")
+
+[node name="Bocadillo" type="Sprite2D" parent="ana"]
+position = Vector2(460, 408)
+scale = Vector2(0.321976, 0.321976)
+texture = ExtResource("5_d3t58")
+
+[node name="IlustraciónSinTítulo(1)" type="Sprite2D" parent="ana"]
+position = Vector2(659, 907)
+scale = Vector2(0.280242, 0.280242)
+texture = ExtResource("6_25y1t")
+
+[node name="Cielo(1)" type="Sprite2D" parent="ana"]
+position = Vector2(469, 244)
+texture = ExtResource("6_d3t58")
+
+[node name="saltar_2" type="Button" parent="ana"]
+offset_left = 938.0
+offset_top = 40.0
+offset_right = 1096.0
+offset_bottom = 83.0
+theme = SubResource("Theme_twwgl")
+theme_override_colors/font_color = Color(0.363707, 0.330877, 0.33908, 1)
+theme_override_styles/hover = SubResource("StyleBoxTexture_vljly")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_riiv8")
+theme_override_styles/normal = SubResource("StyleBoxTexture_0trt3")
+text = "Saltar"
+script = ExtResource("10_kjk02")
+
+[connection signal="animation_finished" from="ana" to="ana" method="_on_animation_finished"]
+[connection signal="pressed" from="ana/saltar_2" to="ana/saltar_2" method="_on_pressed"]

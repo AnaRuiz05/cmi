@@ -1,0 +1,155 @@
+[gd_scene load_steps=23 format=3 uid="uid://db742qenxs8vm"]
+
+[ext_resource type="Script" uid="uid://3rr12hampgbh" path="res://escenas/pantalla_inicio.gd" id="1_3brl3"]
+[ext_resource type="Texture2D" uid="uid://dcxa8llc6ha0x" path="res://elementos/Cielo (1).png" id="2_aj6pq"]
+[ext_resource type="Texture2D" uid="uid://bfurxgf3usedx" path="res://elementos/Nubes_Menú_.png" id="3_btssj"]
+[ext_resource type="Texture2D" uid="uid://61e36piunk6" path="res://escenas/Menú_ (1).png" id="4_mdfel"]
+[ext_resource type="Texture2D" uid="uid://msv01fjgw2mp" path="res://elementos/Botones (1).png" id="5_436le"]
+[ext_resource type="Texture2D" uid="uid://7i1mh30uyhvv" path="res://elementos/Botones.png" id="5_pjla2"]
+[ext_resource type="Script" uid="uid://cs3hvagyinhel" path="res://escenas/button_3.gd" id="7_3brl3"]
+[ext_resource type="Script" uid="uid://d085hvp13hhlw" path="res://escenas/button_2.gd" id="7_aj6pq"]
+[ext_resource type="Script" uid="uid://cipgx8c3f272j" path="res://escenas/button.gd" id="7_btssj"]
+
+[sub_resource type="Animation" id="Animation_btssj"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("pantallaInicio/NubesMenú:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-331, 332)]
+}
+
+[sub_resource type="Animation" id="Animation_aj6pq"]
+resource_name = "menú"
+length = 12.37
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("pantallaInicio/NubesMenú:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 12.3667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-331, 332), Vector2(1586, 375)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_btssj"]
+_data = {
+&"RESET": SubResource("Animation_btssj"),
+&"menú": SubResource("Animation_aj6pq")
+}
+
+[sub_resource type="Theme" id="Theme_oty3n"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3brl3"]
+texture = ExtResource("5_436le")
+region_rect = Rect2(1464, 1246, 584, 146)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_btssj"]
+texture = ExtResource("5_pjla2")
+region_rect = Rect2(1464, 1246, 584, 146)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_436le"]
+texture = ExtResource("5_pjla2")
+region_rect = Rect2(1464, 1246, 584, 146)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_itibt"]
+texture = ExtResource("5_436le")
+region_rect = Rect2(1464, 1246, 584, 146)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_oty3n"]
+texture = ExtResource("5_pjla2")
+region_rect = Rect2(1464, 1246, 584, 146)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_aj6pq"]
+texture = ExtResource("5_pjla2")
+region_rect = Rect2(1464, 1246, 584, 146)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5h5qg"]
+texture = ExtResource("5_436le")
+region_rect = Rect2(1464, 1246, 584, 146)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_mdfel"]
+texture = ExtResource("5_pjla2")
+region_rect = Rect2(1464, 1246, 584, 146)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_pjla2"]
+texture = ExtResource("5_pjla2")
+region_rect = Rect2(1464, 1246, 584, 146)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="pantallaInicio" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_btssj")
+}
+autoplay = "menú"
+script = ExtResource("1_3brl3")
+
+[node name="Cielo(1)" type="Sprite2D" parent="pantallaInicio"]
+position = Vector2(560, 393.5)
+scale = Vector2(0.3187, 0.314919)
+texture = ExtResource("2_aj6pq")
+
+[node name="NubesMenú" type="Sprite2D" parent="pantallaInicio"]
+position = Vector2(-331, 332)
+scale = Vector2(0.350912, 0.308871)
+texture = ExtResource("3_btssj")
+
+[node name="Menú(1)" type="Sprite2D" parent="pantallaInicio"]
+position = Vector2(560, 395.25)
+scale = Vector2(0.3187, 0.317137)
+texture = ExtResource("4_mdfel")
+
+[node name="Button" type="Button" parent="pantallaInicio"]
+offset_left = 922.0
+offset_top = 41.0
+offset_right = 1080.0
+offset_bottom = 84.0
+theme = SubResource("Theme_oty3n")
+theme_override_colors/font_color = Color(0.363707, 0.330877, 0.33908, 1)
+theme_override_styles/hover = SubResource("StyleBoxTexture_3brl3")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_btssj")
+theme_override_styles/normal = SubResource("StyleBoxTexture_436le")
+text = "Comenzar"
+script = ExtResource("7_btssj")
+
+[node name="Button2" type="Button" parent="pantallaInicio"]
+offset_left = 922.0
+offset_top = 99.0
+offset_right = 1081.0
+offset_bottom = 141.0
+theme_override_colors/font_color = Color(0.364706, 0.329412, 0.337255, 1)
+theme_override_styles/hover = SubResource("StyleBoxTexture_itibt")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_oty3n")
+theme_override_styles/normal = SubResource("StyleBoxTexture_aj6pq")
+text = "Galería"
+script = ExtResource("7_aj6pq")
+metadata/_edit_use_anchors_ = true
+
+[node name="Button3" type="Button" parent="pantallaInicio"]
+offset_left = 923.0
+offset_top = 156.0
+offset_right = 1081.0
+offset_bottom = 198.0
+rotation = -0.012651
+theme_override_colors/font_color = Color(0.364706, 0.329412, 0.337255, 1)
+theme_override_styles/hover = SubResource("StyleBoxTexture_5h5qg")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_mdfel")
+theme_override_styles/normal = SubResource("StyleBoxTexture_pjla2")
+text = "Créditos"
+script = ExtResource("7_3brl3")
+
+[connection signal="pressed" from="pantallaInicio/Button" to="pantallaInicio" method="_on_button_pressed"]
+[connection signal="pressed" from="pantallaInicio/Button" to="pantallaInicio/Button" method="_on_pressed"]
+[connection signal="pressed" from="pantallaInicio/Button2" to="pantallaInicio/Button2" method="_on_pressed"]
+[connection signal="pressed" from="pantallaInicio/Button3" to="pantallaInicio/Button3" method="_on_pressed"]

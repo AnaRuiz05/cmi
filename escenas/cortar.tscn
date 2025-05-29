@@ -1,0 +1,297 @@
+[gd_scene load_steps=20 format=3 uid="uid://jwcan7ili536"]
+
+[ext_resource type="Script" uid="uid://cag78yj8igueg" path="res://escenas/cortar.gd" id="1_o13w7"]
+[ext_resource type="Texture2D" uid="uid://dru66qbke1051" path="res://escenas/Cortar_Y_Empaquetar.png" id="2_q6sv3"]
+[ext_resource type="Texture2D" uid="uid://cdp20q0mdrdt" path="res://elementos/Pan_Pizza (2).png" id="3_1ufhd"]
+[ext_resource type="Texture2D" uid="uid://dkk5tq1ksnviw" path="res://elementos/Cortada_1.png" id="4_qxo1x"]
+[ext_resource type="Texture2D" uid="uid://dwfw0r11152lp" path="res://elementos/Cortada_2.png" id="5_tjsyh"]
+[ext_resource type="Texture2D" uid="uid://iuxoftbnbst2" path="res://elementos/Cortada_3.png" id="6_8v8xn"]
+[ext_resource type="Texture2D" uid="uid://dmdve7lhwiluy" path="res://elementos/Cortada_4.png" id="7_dp6tf"]
+[ext_resource type="Texture2D" uid="uid://dwr1ft2wnh2oc" path="res://elementos/Ilustración_sin_título (1).png" id="8_oniru"]
+[ext_resource type="Texture2D" uid="uid://dcxa8llc6ha0x" path="res://elementos/Cielo (1).png" id="9_1ufhd"]
+[ext_resource type="Texture2D" uid="uid://msv01fjgw2mp" path="res://elementos/Botones (1).png" id="10_8v8xn"]
+[ext_resource type="Texture2D" uid="uid://7i1mh30uyhvv" path="res://elementos/Botones.png" id="11_dp6tf"]
+[ext_resource type="Script" uid="uid://dsxjfi73p2pym" path="res://escenas/saltar.gd" id="12_oniru"]
+
+[sub_resource type="Animation" id="Animation_qxo1x"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("cortar/Cortada1:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("cortar/IlustraciónSinTítulo(1):position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(753, 927)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("cortar/Cortada2:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("cortar/Cortada3:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("cortar/Cortada4:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("cortar/Cortada4:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(266, 321)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("cortar/PanPizza(2):modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("cortar/Cielo(1):modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_hlim5"]
+resource_name = "cortar"
+length = 7.7
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("cortar/Cortada1:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.13333, 1.53333, 3.06667, 3.43333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("cortar/Cortada2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 2.4, 2.83333, 4.03333, 4.36667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("cortar/Cortada3:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.0333333, 3.53333, 3.96667, 5.26667, 5.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("cortar/Cortada4:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 4.8, 5.23333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("cortar/IlustraciónSinTítulo(1):position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.966667, 1.63333, 2.26667, 2.9, 3.46667, 4.1, 4.66667, 5.53333, 6.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(753, 927), Vector2(536, 456), Vector2(536, 456), Vector2(630, 550), Vector2(630, 550), Vector2(482, 484), Vector2(482, 484), Vector2(485, 619), Vector2(484.928, 615.776), Vector2(1059, 584)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("cortar/Cortada4:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 5.53333, 6.46667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(266, 321), Vector2(266, 321), Vector2(784, 308)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("cortar/PanPizza(2):modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 2, 2.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("cortar/Cielo(1):modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 6.53333, 7.66667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_v8iqf"]
+_data = {
+&"RESET": SubResource("Animation_qxo1x"),
+&"cortar": SubResource("Animation_hlim5")
+}
+
+[sub_resource type="Theme" id="Theme_hlim5"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_v8iqf"]
+texture = ExtResource("10_8v8xn")
+region_rect = Rect2(1464, 1246, 584, 146)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_pucdy"]
+texture = ExtResource("11_dp6tf")
+region_rect = Rect2(1464, 1246, 584, 146)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fgjbk"]
+texture = ExtResource("11_dp6tf")
+region_rect = Rect2(1464, 1246, 584, 146)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="cortar" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_v8iqf")
+}
+script = ExtResource("1_o13w7")
+
+[node name="CortarYEmpaquetar" type="Sprite2D" parent="cortar"]
+position = Vector2(561.5, 396)
+scale = Vector2(0.320125, 0.320161)
+texture = ExtResource("2_q6sv3")
+
+[node name="PanPizza(2)" type="Sprite2D" parent="cortar"]
+position = Vector2(268, 321)
+rotation = 3.14761
+scale = Vector2(0.333123, 0.333123)
+texture = ExtResource("3_1ufhd")
+
+[node name="Cortada1" type="Sprite2D" parent="cortar"]
+position = Vector2(266, 323)
+scale = Vector2(0.332012, 0.332012)
+texture = ExtResource("4_qxo1x")
+
+[node name="Cortada2" type="Sprite2D" parent="cortar"]
+position = Vector2(266, 322)
+scale = Vector2(0.333039, 0.333039)
+texture = ExtResource("5_tjsyh")
+
+[node name="Cortada3" type="Sprite2D" parent="cortar"]
+position = Vector2(266, 322)
+scale = Vector2(0.332359, 0.332359)
+texture = ExtResource("6_8v8xn")
+
+[node name="Cortada4" type="Sprite2D" parent="cortar"]
+position = Vector2(266, 321)
+scale = Vector2(0.33251, 0.33251)
+texture = ExtResource("7_dp6tf")
+
+[node name="IlustraciónSinTítulo(1)" type="Sprite2D" parent="cortar"]
+position = Vector2(753, 927)
+scale = Vector2(0.33629, 0.33629)
+texture = ExtResource("8_oniru")
+
+[node name="Cielo(1)" type="Sprite2D" parent="cortar"]
+position = Vector2(663, 690)
+texture = ExtResource("9_1ufhd")
+
+[node name="saltar_5" type="Button" parent="cortar"]
+offset_left = 938.0
+offset_top = 40.0
+offset_right = 1096.0
+offset_bottom = 83.0
+theme = SubResource("Theme_hlim5")
+theme_override_colors/font_color = Color(0.363707, 0.330877, 0.33908, 1)
+theme_override_styles/hover = SubResource("StyleBoxTexture_v8iqf")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_pucdy")
+theme_override_styles/normal = SubResource("StyleBoxTexture_fgjbk")
+text = "Saltar"
+script = ExtResource("12_oniru")
+
+[connection signal="animation_finished" from="cortar" to="cortar" method="_on_animation_finished"]
+[connection signal="pressed" from="cortar/saltar_5" to="cortar/saltar_5" method="_on_pressed"]

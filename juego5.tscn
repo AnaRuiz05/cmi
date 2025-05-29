@@ -1,0 +1,75 @@
+[gd_scene load_steps=14 format=3 uid="uid://ccpjwjbsajc0a"]
+
+[ext_resource type="Script" uid="uid://do3q3tdwx15w8" path="res://juego_5.gd" id="1_283im"]
+[ext_resource type="Texture2D" uid="uid://y6ej7u0lnynu" path="res://elementos/Interior.png" id="1_y8wkc"]
+[ext_resource type="Texture2D" uid="uid://bqc8yd6bnae1k" path="res://elementos/Encimera.png" id="2_0p2ku"]
+[ext_resource type="Texture2D" uid="uid://ce4qdrphvd3e2" path="res://elementos/Personaje_1 1 (1).png" id="2_xeweq"]
+[ext_resource type="Texture2D" uid="uid://d1tjqnmutsmu1" path="res://Cajaentrega2.png" id="3_0p2ku"]
+[ext_resource type="Texture2D" uid="uid://b4cxh0ltjy8eo" path="res://elementos/Personaje_1 1.png" id="3_283im"]
+[ext_resource type="Texture2D" uid="uid://bjlgtha35cqe6" path="res://elementos/Personaje_1 (1).png" id="4_5ajgy"]
+[ext_resource type="Texture2D" uid="uid://bh0265sd3wplu" path="res://Cajaentrega.png" id="4_eqxn3"]
+[ext_resource type="Texture2D" uid="uid://rscvqcvf11dh" path="res://elementos/Personaje_1 (2).png" id="5_uu4sk"]
+[ext_resource type="Texture2D" uid="uid://bt6v5f6lqv7c8" path="res://elementos/Chico3.png" id="6_xeweq"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_sko6i"]
+texture = ExtResource("3_0p2ku")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_y35j1"]
+texture = ExtResource("4_eqxn3")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8dglh"]
+texture = ExtResource("4_eqxn3")
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_283im")
+
+[node name="Interior" type="Sprite2D" parent="."]
+position = Vector2(562, 395.5)
+scale = Vector2(0.32041, 0.318952)
+texture = ExtResource("1_y8wkc")
+
+[node name="chica1" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(613, 435)
+scale = Vector2(0.320411, 0.317339)
+texture = ExtResource("2_xeweq")
+
+[node name="chico2" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(613, 436)
+scale = Vector2(0.32041, 0.318952)
+texture = ExtResource("3_283im")
+
+[node name="chico1" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(613, 436)
+scale = Vector2(0.320411, 0.318952)
+texture = ExtResource("4_5ajgy")
+
+[node name="chica2" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(613, 432)
+scale = Vector2(0.327537, 0.326815)
+texture = ExtResource("5_uu4sk")
+
+[node name="Chico3" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(612, 431)
+scale = Vector2(0.32041, 0.318952)
+texture = ExtResource("6_xeweq")
+
+[node name="Encimera" type="Sprite2D" parent="."]
+position = Vector2(562, 395.5)
+scale = Vector2(0.320411, 0.318952)
+texture = ExtResource("2_0p2ku")
+
+[node name="cajaentrega" type="Button" parent="."]
+offset_left = 346.0
+offset_top = 569.0
+offset_right = 571.0
+offset_bottom = 685.0
+theme_override_styles/hover = SubResource("StyleBoxTexture_sko6i")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_y35j1")
+theme_override_styles/normal = SubResource("StyleBoxTexture_8dglh")
+
+[connection signal="pressed" from="cajaentrega" to="." method="_on_cajaentrega_pressed"]

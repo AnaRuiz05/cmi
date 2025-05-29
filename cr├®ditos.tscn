@@ -1,0 +1,188 @@
+[gd_scene load_steps=14 format=3 uid="uid://g23ff83tp7sx"]
+
+[ext_resource type="Texture2D" uid="uid://cbou35j631w7t" path="res://escenas/galeria/Cielo (3).png" id="1_36lty"]
+[ext_resource type="Texture2D" uid="uid://msv01fjgw2mp" path="res://elementos/Botones (1).png" id="2_njy8y"]
+[ext_resource type="Texture2D" uid="uid://7i1mh30uyhvv" path="res://elementos/Botones.png" id="3_bvkgi"]
+[ext_resource type="Script" uid="uid://cxml7kv8rs8uu" path="res://volver.gd" id="4_movq0"]
+
+[sub_resource type="Theme" id="Theme_o03va"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vxxkq"]
+texture = ExtResource("2_njy8y")
+region_rect = Rect2(1464, 1246, 584, 146)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_l2uxv"]
+texture = ExtResource("3_bvkgi")
+region_rect = Rect2(1464, 1246, 584, 146)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ghmfe"]
+texture = ExtResource("3_bvkgi")
+region_rect = Rect2(1464, 1246, 584, 146)
+
+[sub_resource type="Animation" id="Animation_bvkgi"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(183, 883)]
+}
+
+[sub_resource type="Animation" id="Animation_njy8y"]
+resource_name = "creditos"
+length = 6.4
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 6.33333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(183, 883), Vector2(197, -463)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_movq0"]
+_data = {
+&"RESET": SubResource("Animation_bvkgi"),
+&"creditos": SubResource("Animation_njy8y")
+}
+
+[sub_resource type="Theme" id="Theme_njy8y"]
+
+[sub_resource type="FontFile" id="FontFile_njy8y"]
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/2/0/ascent = 0.0
+cache/0/2/0/descent = 0.0
+cache/0/2/0/underline_position = 0.0
+cache/0/2/0/underline_thickness = 0.0
+cache/0/2/0/scale = 1.0
+cache/0/3/0/ascent = 0.0
+cache/0/3/0/descent = 0.0
+cache/0/3/0/underline_position = 0.0
+cache/0/3/0/underline_thickness = 0.0
+cache/0/3/0/scale = 1.0
+cache/0/4/0/ascent = 0.0
+cache/0/4/0/descent = 0.0
+cache/0/4/0/underline_position = 0.0
+cache/0/4/0/underline_thickness = 0.0
+cache/0/4/0/scale = 1.0
+cache/0/5/0/ascent = 0.0
+cache/0/5/0/descent = 0.0
+cache/0/5/0/underline_position = 0.0
+cache/0/5/0/underline_thickness = 0.0
+cache/0/5/0/scale = 1.0
+cache/0/6/0/ascent = 0.0
+cache/0/6/0/descent = 0.0
+cache/0/6/0/underline_position = 0.0
+cache/0/6/0/underline_thickness = 0.0
+cache/0/6/0/scale = 1.0
+cache/0/7/0/ascent = 0.0
+cache/0/7/0/descent = 0.0
+cache/0/7/0/underline_position = 0.0
+cache/0/7/0/underline_thickness = 0.0
+cache/0/7/0/scale = 1.0
+cache/0/8/0/ascent = 0.0
+cache/0/8/0/descent = 0.0
+cache/0/8/0/underline_position = 0.0
+cache/0/8/0/underline_thickness = 0.0
+cache/0/8/0/scale = 1.0
+cache/0/9/0/ascent = 0.0
+cache/0/9/0/descent = 0.0
+cache/0/9/0/underline_position = 0.0
+cache/0/9/0/underline_thickness = 0.0
+cache/0/9/0/scale = 1.0
+cache/0/10/0/ascent = 0.0
+cache/0/10/0/descent = 0.0
+cache/0/10/0/underline_position = 0.0
+cache/0/10/0/underline_thickness = 0.0
+cache/0/10/0/scale = 1.0
+cache/0/11/0/ascent = 0.0
+cache/0/11/0/descent = 0.0
+cache/0/11/0/underline_position = 0.0
+cache/0/11/0/underline_thickness = 0.0
+cache/0/11/0/scale = 1.0
+cache/0/12/0/ascent = 0.0
+cache/0/12/0/descent = 0.0
+cache/0/12/0/underline_position = 0.0
+cache/0/12/0/underline_thickness = 0.0
+cache/0/12/0/scale = 1.0
+cache/0/13/0/ascent = 0.0
+cache/0/13/0/descent = 0.0
+cache/0/13/0/underline_position = 0.0
+cache/0/13/0/underline_thickness = 0.0
+cache/0/13/0/scale = 1.0
+cache/0/14/0/ascent = 0.0
+cache/0/14/0/descent = 0.0
+cache/0/14/0/underline_position = 0.0
+cache/0/14/0/underline_thickness = 0.0
+cache/0/14/0/scale = 1.0
+cache/0/15/0/ascent = 0.0
+cache/0/15/0/descent = 0.0
+cache/0/15/0/underline_position = 0.0
+cache/0/15/0/underline_thickness = 0.0
+cache/0/15/0/scale = 1.0
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Cielo(3)" type="Sprite2D" parent="."]
+modulate = Color(0.368627, 0.360784, 0.352941, 1)
+texture_filter = 5
+position = Vector2(566.064, 399.75)
+scale = Vector2(0.322782, 0.322782)
+texture = ExtResource("1_36lty")
+metadata/a = false
+
+[node name="volver_creditos" type="Button" parent="."]
+offset_left = 936.0
+offset_top = 45.0
+offset_right = 1051.0
+offset_bottom = 68.0
+scale = Vector2(1.22073, 1.4831)
+theme = SubResource("Theme_o03va")
+theme_override_colors/font_color = Color(0.363707, 0.330877, 0.33908, 1)
+theme_override_styles/hover = SubResource("StyleBoxTexture_vxxkq")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_l2uxv")
+theme_override_styles/normal = SubResource("StyleBoxTexture_ghmfe")
+text = "Volver"
+script = ExtResource("4_movq0")
+
+[node name="creditos" type="AnimationPlayer" parent="."]
+root_node = NodePath("Label")
+libraries = {
+&"": SubResource("AnimationLibrary_movq0")
+}
+autoplay = "creditos"
+
+[node name="Label" type="Label" parent="creditos"]
+offset_left = 183.0
+offset_top = 883.0
+offset_right = 431.0
+offset_bottom = 984.0
+scale = Vector2(2.99965, 4.19731)
+theme = SubResource("Theme_njy8y")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("FontFile_njy8y")
+theme_override_font_sizes/font_size = 16
+text = "Ana Ruíz Escobar
+ 2ºA
+Creacion multimedia interactiva
+Curso 24/25"
+horizontal_alignment = 1
+clip_text = true
+
+[connection signal="pressed" from="volver_creditos" to="volver_creditos" method="_on_pressed"]

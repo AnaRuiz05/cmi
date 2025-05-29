@@ -1,0 +1,71 @@
+[gd_scene load_steps=14 format=3 uid="uid://bycatq5q8v71e"]
+
+[ext_resource type="Texture2D" uid="uid://bxc1s3mtijj77" path="res://escenas/galeria/Interior (1).png" id="1_0vkg7"]
+[ext_resource type="Texture2D" uid="uid://msv01fjgw2mp" path="res://elementos/Botones (1).png" id="2_glkit"]
+[ext_resource type="Texture2D" uid="uid://7i1mh30uyhvv" path="res://elementos/Botones.png" id="3_npyv3"]
+[ext_resource type="Script" uid="uid://cmotdf7bhgq2q" path="res://siguiente_2.gd" id="4_fetp2"]
+[ext_resource type="Script" uid="uid://cxml7kv8rs8uu" path="res://volver.gd" id="5_npyv3"]
+
+[sub_resource type="Theme" id="Theme_glkit"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_npyv3"]
+texture = ExtResource("2_glkit")
+region_rect = Rect2(1464, 1246, 584, 146)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fetp2"]
+texture = ExtResource("3_npyv3")
+region_rect = Rect2(1464, 1246, 584, 146)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qqtm0"]
+texture = ExtResource("3_npyv3")
+region_rect = Rect2(1464, 1246, 584, 146)
+
+[sub_resource type="Theme" id="Theme_fetp2"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_42kej"]
+texture = ExtResource("2_glkit")
+region_rect = Rect2(1464, 1246, 584, 146)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vk2ib"]
+texture = ExtResource("3_npyv3")
+region_rect = Rect2(1464, 1246, 584, 146)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kfhp3"]
+texture = ExtResource("3_npyv3")
+region_rect = Rect2(1464, 1246, 584, 146)
+
+[node name="Interior(1)" type="Sprite2D"]
+position = Vector2(562.5, 394.5)
+scale = Vector2(0.320696, 0.318145)
+texture = ExtResource("1_0vkg7")
+
+[node name="siguiente2" type="Button" parent="."]
+offset_left = 1121.52
+offset_top = -1149.42
+offset_right = 1279.52
+offset_bottom = -1106.42
+scale = Vector2(3.48594, 3.6416)
+theme = SubResource("Theme_glkit")
+theme_override_colors/font_color = Color(0.363707, 0.330877, 0.33908, 1)
+theme_override_styles/hover = SubResource("StyleBoxTexture_npyv3")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_fetp2")
+theme_override_styles/normal = SubResource("StyleBoxTexture_qqtm0")
+text = "siguiente"
+script = ExtResource("4_fetp2")
+
+[node name="volver_gale2" type="Button" parent="."]
+offset_left = 1127.24
+offset_top = -906.819
+offset_right = 1285.24
+offset_bottom = -863.819
+scale = Vector2(3.48594, 3.6416)
+theme = SubResource("Theme_fetp2")
+theme_override_colors/font_color = Color(0.363707, 0.330877, 0.33908, 1)
+theme_override_styles/hover = SubResource("StyleBoxTexture_42kej")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_vk2ib")
+theme_override_styles/normal = SubResource("StyleBoxTexture_kfhp3")
+text = "Volver"
+script = ExtResource("5_npyv3")
+
+[connection signal="pressed" from="siguiente2" to="siguiente2" method="_on_pressed"]
+[connection signal="pressed" from="volver_gale2" to="volver_gale2" method="_on_pressed"]

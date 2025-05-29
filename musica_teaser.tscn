@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://mhbq61sfh2ct"]
+
+[ext_resource type="AudioStream" uid="uid://d163ps4iwsbjk" path="res://escenas/pizza-299710.mp3" id="1_6ept0"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
+stream = ExtResource("1_6ept0")
+autoplay = true

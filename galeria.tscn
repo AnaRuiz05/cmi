@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://bk3x70m8qq3k2"]
+
+[ext_resource type="Texture2D" uid="uid://cbou35j631w7t" path="res://escenas/galeria/Cielo (3).png" id="1_qxtgx"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Cielo(3)" type="Sprite2D" parent="."]
+position = Vector2(560.188, 405.585)
+rotation = -0.00189611
+scale = Vector2(0.338797, 0.338797)
+texture = ExtResource("1_qxtgx")

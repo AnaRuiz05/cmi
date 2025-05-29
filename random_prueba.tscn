@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://b42djamw5l12x"]
+
+[ext_resource type="Script" uid="uid://drhndrgsykrxo" path="res://random.gd" id="1_2wama"]
+[ext_resource type="Texture2D" uid="uid://vrxagxbx0ju8" path="res://elementos/2Cortar_Y_Empaquetar.png" id="2_lcykp"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_2wama")
+
+[node name="2CortarYEmpaquetar" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(663, 273)
+texture = ExtResource("2_lcykp")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 240.0
+offset_top = 222.0
+offset_right = 497.0
+offset_bottom = 355.0
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

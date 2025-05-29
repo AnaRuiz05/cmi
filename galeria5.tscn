@@ -1,0 +1,41 @@
+[gd_scene load_steps=9 format=3 uid="uid://c2t1s6q4rmius"]
+
+[ext_resource type="Texture2D" uid="uid://ci6bnb0clv4ce" path="res://escenas/galeria/Cortar_Y_Empaquetar (1).png" id="1_2tenb"]
+[ext_resource type="Texture2D" uid="uid://msv01fjgw2mp" path="res://elementos/Botones (1).png" id="2_nxwve"]
+[ext_resource type="Texture2D" uid="uid://7i1mh30uyhvv" path="res://elementos/Botones.png" id="3_p74ge"]
+[ext_resource type="Script" uid="uid://cxml7kv8rs8uu" path="res://volver.gd" id="4_17i81"]
+
+[sub_resource type="Theme" id="Theme_0s44b"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6fs4n"]
+texture = ExtResource("2_nxwve")
+region_rect = Rect2(1464, 1246, 584, 146)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wi26d"]
+texture = ExtResource("3_p74ge")
+region_rect = Rect2(1464, 1246, 584, 146)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_evs4c"]
+texture = ExtResource("3_p74ge")
+region_rect = Rect2(1464, 1246, 584, 146)
+
+[node name="CortarYEmpaquetar(1)" type="Sprite2D"]
+position = Vector2(562.5, 398)
+scale = Vector2(0.320696, 0.320161)
+texture = ExtResource("1_2tenb")
+
+[node name="volver_galeria" type="Button" parent="."]
+offset_left = 1121.52
+offset_top = -1149.42
+offset_right = 1279.52
+offset_bottom = -1106.42
+scale = Vector2(3.48594, 3.6416)
+theme = SubResource("Theme_0s44b")
+theme_override_colors/font_color = Color(0.363707, 0.330877, 0.33908, 1)
+theme_override_styles/hover = SubResource("StyleBoxTexture_6fs4n")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_wi26d")
+theme_override_styles/normal = SubResource("StyleBoxTexture_evs4c")
+text = "Volver"
+script = ExtResource("4_17i81")
+
+[connection signal="pressed" from="volver_galeria" to="volver_galeria" method="_on_pressed"]

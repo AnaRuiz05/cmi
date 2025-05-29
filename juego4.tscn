@@ -1,0 +1,195 @@
+[gd_scene load_steps=33 format=3 uid="uid://dtvc8m3nqwt4p"]
+
+[ext_resource type="Script" uid="uid://dlfifql6ho8if" path="res://juego_4.gd" id="1_17bvm"]
+[ext_resource type="Texture2D" uid="uid://vrxagxbx0ju8" path="res://elementos/2Cortar_Y_Empaquetar.png" id="1_rmt2e"]
+[ext_resource type="Texture2D" uid="uid://bs2r5rohu5t5" path="res://elementos/Botonempaquetar2 (2).png" id="3_8m8em"]
+[ext_resource type="Texture2D" uid="uid://miwq04bh8c3v" path="res://elementos/Cortadapeperoni1.png" id="3_17bvm"]
+[ext_resource type="Texture2D" uid="uid://c6lox2owbyl1d" path="res://elementos/2Cortador_Botón_.png" id="3_iorkd"]
+[ext_resource type="Texture2D" uid="uid://c8ui43lmddxk3" path="res://elementos/Cortadapeperoni2.png" id="4_6fpap"]
+[ext_resource type="Texture2D" uid="uid://c5x8fvfcpt7bo" path="res://elementos/Cortador_Botón_.png" id="4_bdd5w"]
+[ext_resource type="Texture2D" uid="uid://cmobxn4jrnj2t" path="res://Botonempaquetar (1).png" id="4_vvgh4"]
+[ext_resource type="Texture2D" uid="uid://mxioyx8oasq6" path="res://elementos/Cortadapeperoni3.png" id="5_rmt2e"]
+[ext_resource type="Texture2D" uid="uid://bpo2wv46sfdqv" path="res://elementos/Cortadapeperoni4.png" id="6_ls6gx"]
+[ext_resource type="Texture2D" uid="uid://vmwoj44t0pdp" path="res://elementos/Cortadapiña1.png" id="7_m04mc"]
+[ext_resource type="Texture2D" uid="uid://hwsk8lhr8a27" path="res://elementos/Cortadapiña2.png" id="8_5vm8m"]
+[ext_resource type="Texture2D" uid="uid://cuw8tg3qkvhd7" path="res://elementos/Cortadapiña3.png" id="9_iorkd"]
+[ext_resource type="Texture2D" uid="uid://cu1agm82oxtov" path="res://elementos/Cortadaaceituna1.png" id="10_bdd5w"]
+[ext_resource type="Texture2D" uid="uid://dkjs67j3kqawf" path="res://elementos/Cortadaaceituna2.png" id="11_8m8em"]
+[ext_resource type="Texture2D" uid="uid://btrwmldo2av21" path="res://elementos/Cortadaaceituna3.png" id="12_vvgh4"]
+[ext_resource type="Texture2D" uid="uid://cbah8ok1yhk5" path="res://elementos/Cortadaaceituna4.png" id="13_ir21f"]
+[ext_resource type="Texture2D" uid="uid://c671j646ixnq2" path="res://elementos/Cortadachampi1.png" id="14_k555f"]
+[ext_resource type="Texture2D" uid="uid://bpdc6rg222jfg" path="res://elementos/Cortadapiña4.png" id="14_vvgh4"]
+[ext_resource type="Texture2D" uid="uid://gpfektj7t3sg" path="res://elementos/Cortadachampi2.png" id="15_50qiw"]
+[ext_resource type="Texture2D" uid="uid://hfsj2ms67irj" path="res://elementos/Cortadachampi3.png" id="16_ugmvg"]
+[ext_resource type="Texture2D" uid="uid://cspm2qiapfpp" path="res://elementos/Cortadachampi4.png" id="17_fgal0"]
+[ext_resource type="Texture2D" uid="uid://dlu5gqrxh02oh" path="res://elementos/Cortadaalbahaca1.png" id="18_dasgd"]
+[ext_resource type="Texture2D" uid="uid://basmj8jm62nyg" path="res://elementos/Cortadaalbahaca2.png" id="19_ugs22"]
+[ext_resource type="Texture2D" uid="uid://kane8t2pydpr" path="res://elementos/Cortadaalbahaca3.png" id="20_ditp0"]
+[ext_resource type="Texture2D" uid="uid://jbxv1ufpqfth" path="res://elementos/Cortadaalbahaca4.png" id="21_4urqq"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_k555f"]
+texture = ExtResource("3_8m8em")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_50qiw"]
+texture = ExtResource("4_vvgh4")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ugmvg"]
+texture = ExtResource("4_vvgh4")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8m8em"]
+texture = ExtResource("3_iorkd")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vvgh4"]
+texture = ExtResource("4_bdd5w")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ir21f"]
+texture = ExtResource("4_bdd5w")
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_17bvm")
+
+[node name="2CortarYEmpaquetar" type="Sprite2D" parent="."]
+position = Vector2(563, 397)
+scale = Vector2(0.320981, 0.320161)
+texture = ExtResource("1_rmt2e")
+
+[node name="Botonempaquetar" type="Button" parent="."]
+offset_left = 607.0
+offset_top = -4.0
+offset_right = 1127.0
+offset_bottom = 715.0
+theme_override_styles/hover = SubResource("StyleBoxTexture_k555f")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_50qiw")
+theme_override_styles/normal = SubResource("StyleBoxTexture_ugmvg")
+
+[node name="botoncortar" type="Button" parent="."]
+offset_left = 172.0
+offset_top = 79.0
+offset_right = 434.0
+offset_bottom = 257.0
+theme_override_styles/hover = SubResource("StyleBoxTexture_8m8em")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_vvgh4")
+theme_override_styles/normal = SubResource("StyleBoxTexture_ir21f")
+
+[node name="Cortadapeperoni1" type="Sprite2D" parent="."]
+position = Vector2(281.5, 338)
+scale = Vector2(0.288198, 0.291936)
+texture = ExtResource("3_17bvm")
+
+[node name="Cortadapeperoni2" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(281.5, 338)
+scale = Vector2(0.288198, 0.291935)
+texture = ExtResource("4_6fpap")
+
+[node name="Cortadapeperoni3" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(281.5, 338)
+scale = Vector2(0.288198, 0.291935)
+texture = ExtResource("5_rmt2e")
+
+[node name="Cortadapeperoni4" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(281.5, 338)
+scale = Vector2(0.288198, 0.291935)
+texture = ExtResource("6_ls6gx")
+
+[node name="Cortadapiña1" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(281.5, 338)
+scale = Vector2(0.288198, 0.291935)
+texture = ExtResource("7_m04mc")
+
+[node name="Cortadapiña2" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(281.5, 338)
+scale = Vector2(0.288198, 0.291935)
+texture = ExtResource("8_5vm8m")
+
+[node name="Cortadapiña3" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(281.5, 338)
+scale = Vector2(0.288198, 0.291935)
+texture = ExtResource("9_iorkd")
+
+[node name="Cortadapiña4" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(281.5, 338)
+scale = Vector2(0.288198, 0.291935)
+texture = ExtResource("14_vvgh4")
+
+[node name="Cortadaaceituna1" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(281.5, 338)
+scale = Vector2(0.288198, 0.291935)
+texture = ExtResource("10_bdd5w")
+
+[node name="Cortadaaceituna2" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(281.5, 338)
+scale = Vector2(0.288198, 0.291936)
+texture = ExtResource("11_8m8em")
+
+[node name="Cortadaaceituna3" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(281.5, 338)
+scale = Vector2(0.288198, 0.291936)
+texture = ExtResource("12_vvgh4")
+
+[node name="Cortadaaceituna4" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(281.5, 338)
+scale = Vector2(0.288198, 0.291936)
+texture = ExtResource("13_ir21f")
+
+[node name="Cortadachampi1" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(281.5, 338)
+scale = Vector2(0.288198, 0.291935)
+texture = ExtResource("14_k555f")
+
+[node name="Cortadachampi2" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(281.5, 338)
+scale = Vector2(0.288198, 0.291935)
+texture = ExtResource("15_50qiw")
+
+[node name="Cortadachampi3" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(281.5, 338)
+scale = Vector2(0.288198, 0.291935)
+texture = ExtResource("16_ugmvg")
+
+[node name="Cortadachampi4" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(281.5, 338)
+scale = Vector2(0.288198, 0.291935)
+texture = ExtResource("17_fgal0")
+
+[node name="Cortadaalbahaca1" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(281.5, 338)
+scale = Vector2(0.288198, 0.291935)
+texture = ExtResource("18_dasgd")
+
+[node name="Cortadaalbahaca2" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(281.5, 338)
+scale = Vector2(0.288198, 0.291935)
+texture = ExtResource("19_ugs22")
+
+[node name="Cortadaalbahaca3" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(281.5, 338)
+scale = Vector2(0.288198, 0.291936)
+texture = ExtResource("20_ditp0")
+
+[node name="Cortadaalbahaca4" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(281.5, 338)
+scale = Vector2(0.288198, 0.291935)
+texture = ExtResource("21_4urqq")
+
+[connection signal="pressed" from="Botonempaquetar" to="." method="_on_botonempaquetar_pressed"]
+[connection signal="pressed" from="botoncortar" to="." method="_on_botoncortar_pressed"]
+[connection signal="pressed" from="botoncortar" to="botoncortar" method="_on_pressed"]

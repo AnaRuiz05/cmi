@@ -1,0 +1,164 @@
+[gd_scene load_steps=18 format=3 uid="uid://065cegblaup0"]
+
+[ext_resource type="Script" uid="uid://dls5kqmy3d3xo" path="res://escenas/entrega.gd" id="1_ltet1"]
+[ext_resource type="Texture2D" uid="uid://y6ej7u0lnynu" path="res://elementos/Interior.png" id="2_rioi8"]
+[ext_resource type="Texture2D" uid="uid://bjlgtha35cqe6" path="res://elementos/Personaje_1 (1).png" id="3_k8dye"]
+[ext_resource type="Texture2D" uid="uid://ben0lao4vv5pc" path="res://elementos/Encimera (1).png" id="4_nmjkr"]
+[ext_resource type="Texture2D" uid="uid://b7a5iyh11u75" path="res://elementos/Caja_Pizza.png" id="5_tixbm"]
+[ext_resource type="Texture2D" uid="uid://dwr1ft2wnh2oc" path="res://elementos/Ilustración_sin_título (1).png" id="6_30ejf"]
+[ext_resource type="Texture2D" uid="uid://dcxa8llc6ha0x" path="res://elementos/Cielo (1).png" id="7_ljgm4"]
+[ext_resource type="Texture2D" uid="uid://msv01fjgw2mp" path="res://elementos/Botones (1).png" id="8_tixbm"]
+[ext_resource type="Texture2D" uid="uid://7i1mh30uyhvv" path="res://elementos/Botones.png" id="9_30ejf"]
+[ext_resource type="Script" uid="uid://dsxjfi73p2pym" path="res://escenas/saltar.gd" id="10_ljgm4"]
+
+[sub_resource type="Animation" id="Animation_ro6rm"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("entrega/CajaPizza:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(646, 391)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("entrega/IlustraciónSinTítulo(1):position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(853, 910)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("entrega/Cielo(1):modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_3aqlm"]
+resource_name = "entrega"
+length = 3.4
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("entrega/CajaPizza:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.4, 2.33333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(646, 391), Vector2(646, 391), Vector2(526, 196)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("entrega/IlustraciónSinTítulo(1):position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.733333, 1.4, 2.36667),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(853, 910), Vector2(647, 687), Vector2(649.245, 689.43), Vector2(529, 487)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("entrega/Cielo(1):modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 2.43333, 3.33333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_hb4jm"]
+_data = {
+&"RESET": SubResource("Animation_ro6rm"),
+&"entrega": SubResource("Animation_3aqlm")
+}
+
+[sub_resource type="Theme" id="Theme_3aqlm"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ro6rm"]
+texture = ExtResource("8_tixbm")
+region_rect = Rect2(1464, 1246, 584, 146)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hb4jm"]
+texture = ExtResource("9_30ejf")
+region_rect = Rect2(1464, 1246, 584, 146)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0ny04"]
+texture = ExtResource("9_30ejf")
+region_rect = Rect2(1464, 1246, 584, 146)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="entrega" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_hb4jm")
+}
+script = ExtResource("1_ltet1")
+
+[node name="Interior" type="Sprite2D" parent="entrega"]
+position = Vector2(562, 397)
+scale = Vector2(0.318952, 0.318952)
+texture = ExtResource("2_rioi8")
+
+[node name="Personaje1(1)" type="Sprite2D" parent="entrega"]
+position = Vector2(577, 429)
+scale = Vector2(0.33004, 0.33004)
+texture = ExtResource("3_k8dye")
+
+[node name="Encimera(1)" type="Sprite2D" parent="entrega"]
+position = Vector2(561, 395)
+scale = Vector2(0.319153, 0.319153)
+texture = ExtResource("4_nmjkr")
+
+[node name="CajaPizza" type="Sprite2D" parent="entrega"]
+position = Vector2(646, 391)
+scale = Vector2(0.316935, 0.316936)
+texture = ExtResource("5_tixbm")
+
+[node name="IlustraciónSinTítulo(1)" type="Sprite2D" parent="entrega"]
+position = Vector2(853, 910)
+scale = Vector2(0.301814, 0.301815)
+texture = ExtResource("6_30ejf")
+
+[node name="Cielo(1)" type="Sprite2D" parent="entrega"]
+position = Vector2(458, 727)
+texture = ExtResource("7_ljgm4")
+
+[node name="saltar_6" type="Button" parent="entrega"]
+offset_left = 938.0
+offset_top = 40.0
+offset_right = 1096.0
+offset_bottom = 83.0
+theme = SubResource("Theme_3aqlm")
+theme_override_colors/font_color = Color(0.363707, 0.330877, 0.33908, 1)
+theme_override_styles/hover = SubResource("StyleBoxTexture_ro6rm")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_hb4jm")
+theme_override_styles/normal = SubResource("StyleBoxTexture_0ny04")
+text = "Saltar"
+script = ExtResource("10_ljgm4")
+
+[connection signal="animation_finished" from="entrega" to="entrega" method="_on_animation_finished"]
+[connection signal="pressed" from="entrega/saltar_6" to="entrega/saltar_6" method="_on_pressed"]

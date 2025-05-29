@@ -1,0 +1,225 @@
+[gd_scene load_steps=20 format=3 uid="uid://bx23qsbllpa58"]
+
+[ext_resource type="Script" uid="uid://b5sdbcbk50plv" path="res://horno.gd" id="1_exwi4"]
+[ext_resource type="Texture2D" uid="uid://c3v1rexgm271o" path="res://elementos/Fondo_Cinta.png" id="2_hmoh2"]
+[ext_resource type="Texture2D" uid="uid://bxh4xvhe3seum" path="res://elementos/Cinta.png" id="3_gnpjy"]
+[ext_resource type="Texture2D" uid="uid://dh1ncuwmujptb" path="res://elementos/Horno_1.png" id="4_o00pa"]
+[ext_resource type="Texture2D" uid="uid://clh53n4fcjsxd" path="res://elementos/Pan_Pizza (1).png" id="5_gnpjy"]
+[ext_resource type="Texture2D" uid="uid://cdp20q0mdrdt" path="res://elementos/Pan_Pizza (2).png" id="6_abbl6"]
+[ext_resource type="Texture2D" uid="uid://bg16q650eponu" path="res://elementos/Horno_2.png" id="7_2fh52"]
+[ext_resource type="Texture2D" uid="uid://dwr1ft2wnh2oc" path="res://elementos/Ilustración_sin_título (1).png" id="8_lj8w7"]
+[ext_resource type="Texture2D" uid="uid://dcxa8llc6ha0x" path="res://elementos/Cielo (1).png" id="9_wmddd"]
+[ext_resource type="Texture2D" uid="uid://msv01fjgw2mp" path="res://elementos/Botones (1).png" id="10_wmddd"]
+[ext_resource type="Texture2D" uid="uid://7i1mh30uyhvv" path="res://elementos/Botones.png" id="11_882br"]
+[ext_resource type="Script" uid="uid://dsxjfi73p2pym" path="res://escenas/saltar.gd" id="12_ht7fi"]
+
+[sub_resource type="Animation" id="Animation_ht7fi"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("horno/Cinta:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-299, 430)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("horno/PanPizza(1):position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(166, 274)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("horno/PanPizza(2):position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(490, 282)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("horno/IlustraciónSinTítulo(1):position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(654, 935)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("horno/Cielo(1):modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_882br"]
+resource_name = "horno"
+length = 10.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("horno/Cinta:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(1.6, 7.13333, 8.06667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(-299, 430), Vector2(162, 421), Vector2(162, 421)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("horno/PanPizza(1):position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(1.6, 4.53333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(166, 274), Vector2(539, 265)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("horno/PanPizza(2):position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(3.86667, 7.13333, 8.03333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(490, 282), Vector2(854, 282), Vector2(854, 282)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("horno/IlustraciónSinTítulo(1):position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1.33333, 6.3, 7.76667, 8.86667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(654, 935), Vector2(748, 395), Vector2(748, 395), Vector2(748, 395), Vector2(1159, 510)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("horno/Cielo(1):modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 8.9, 9.96667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_fffem"]
+_data = {
+&"RESET": SubResource("Animation_ht7fi"),
+&"horno": SubResource("Animation_882br")
+}
+
+[sub_resource type="Theme" id="Theme_fffem"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5tb0g"]
+texture = ExtResource("10_wmddd")
+region_rect = Rect2(1464, 1246, 584, 146)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qarem"]
+texture = ExtResource("11_882br")
+region_rect = Rect2(1464, 1246, 584, 146)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qp1r2"]
+texture = ExtResource("11_882br")
+region_rect = Rect2(1464, 1246, 584, 146)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="horno" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_fffem")
+}
+script = ExtResource("1_exwi4")
+
+[node name="FondoCinta" type="Sprite2D" parent="horno"]
+position = Vector2(560.814, 398.5)
+scale = Vector2(0.319946, 0.321371)
+texture = ExtResource("2_hmoh2")
+
+[node name="Cinta" type="Sprite2D" parent="horno"]
+position = Vector2(-299, 430)
+scale = Vector2(0.835729, 0.777974)
+texture = ExtResource("3_gnpjy")
+
+[node name="Horno1" type="Sprite2D" parent="horno"]
+position = Vector2(560.5, 398)
+scale = Vector2(0.318985, 0.320161)
+texture = ExtResource("4_o00pa")
+
+[node name="PanPizza(1)" type="Sprite2D" parent="horno"]
+position = Vector2(166, 274)
+scale = Vector2(0.260453, 0.262399)
+texture = ExtResource("5_gnpjy")
+
+[node name="PanPizza(2)" type="Sprite2D" parent="horno"]
+position = Vector2(490, 282)
+rotation = -3.23431
+scale = Vector2(0.257891, 0.259274)
+texture = ExtResource("6_abbl6")
+
+[node name="Horno2" type="Sprite2D" parent="horno"]
+position = Vector2(562, 403)
+scale = Vector2(0.319556, 0.319556)
+texture = ExtResource("7_2fh52")
+
+[node name="IlustraciónSinTítulo(1)" type="Sprite2D" parent="horno"]
+position = Vector2(654, 935)
+scale = Vector2(0.386089, 0.386089)
+texture = ExtResource("8_lj8w7")
+
+[node name="Cielo(1)" type="Sprite2D" parent="horno"]
+position = Vector2(614, 638)
+texture = ExtResource("9_wmddd")
+
+[node name="saltar_4" type="Button" parent="horno"]
+offset_left = 938.0
+offset_top = 40.0
+offset_right = 1096.0
+offset_bottom = 83.0
+theme = SubResource("Theme_fffem")
+theme_override_colors/font_color = Color(0.363707, 0.330877, 0.33908, 1)
+theme_override_styles/hover = SubResource("StyleBoxTexture_5tb0g")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_qarem")
+theme_override_styles/normal = SubResource("StyleBoxTexture_qp1r2")
+text = "Saltar"
+script = ExtResource("12_ht7fi")
+
+[connection signal="animation_finished" from="horno" to="horno" method="_on_animation_finished"]
+[connection signal="pressed" from="horno/saltar_4" to="horno/saltar_4" method="_on_pressed"]
