@@ -1,12 +1,12 @@
 ## Pizza Control.
 
-[](https://github.com/mgea/cmi/blob/master/readme.md#nombre-del-proyecto)
+
 
 Proyecto de Creación Multimedia Interactiva de la Facultad de Bellas Artes de la Universidad de Granada
 
 # 1 Datos
 
-[](https://github.com/mgea/cmi/blob/master/readme.md#1-datos)
+
 
 **Título** : Pizza Control.
 
@@ -18,7 +18,9 @@ Proyecto de Creación Multimedia Interactiva de la Facultad de Bellas Artes de l
 
 **Estilo/género:** Juego infantil.
 
-**Logotipo:** ![enter image description here](https://photos.app.goo.gl/kbkS2UiwQaAjfM9UA)
+**Logotipo:** 
+![Ilustración_sin_título (3)](https://github.com/user-attachments/assets/f94a75ac-51c1-4544-b353-0828fc3698cf)
+
 
 **Resolución:** 1123x794px a tamaño fijo.
 
@@ -33,34 +35,36 @@ Proyecto de Creación Multimedia Interactiva de la Facultad de Bellas Artes de l
 *Medios*:
 
 -   Github https://github.com/AnaRuiz05
+  ![Ilustración_sin_título 1](https://github.com/user-attachments/assets/baad1988-6baa-42b3-b9c4-0af07759df5c)
+
     
 
 # 2. Memoria del proyecto
 
-[](https://github.com/mgea/cmi/blob/master/readme.md#2-memoria-del-proyecto)
 
 ### 2.1 Guión gráfico:
 
-![enter image description here](https://photos.app.goo.gl/g1dCNhtREQPUPJ9e9)
+![Bocetos](https://github.com/user-attachments/assets/4877ea42-6705-40b9-87b4-16e145912ef7)
+
 
 La idea principal era que un cliente llegase a tu local con una comanda y que el proceso para realizar el pedido fuera: poner los ingredientes sobre masa, salsa y queso, pasarla por el horno, cortarla y, por último, entregarla.
 
 
 ### 2.2. Esquema de navegación
 
-![enter image description here](https://photos.app.goo.gl/iFwVMjWg3jqFB8YQ7)
+![Diagrama sin título drawio](https://github.com/user-attachments/assets/a91d194f-9cba-4e96-864d-b3c79ae6b61c)
+
 
 
 
 # 3. Metodología
 
-[](https://github.com/mgea/cmi/blob/master/readme.md#3-metodolog%C3%ADa)
+
 
 Metodología de desarrollo de productos multimedia basada en una metodología de UX (User Experience)
 
 ### Etapa 1: Ideación de proyecto
 
-[](https://github.com/mgea/cmi/blob/master/readme.md#etapa-1-ideaci%C3%B3n-de-proyecto)
 
 **Investigación de campo:**  Gran pizza, Buena pizza.
 
@@ -97,7 +101,7 @@ Por lo demás, estoy muy orgullosa del resultado y de mi progreso con godot y la
 
 # 5 Referencias
 
-[](https://github.com/mgea/cmi/blob/master/readme.md#5-referencias)
+
 
 **Artículos y blogs**
 
