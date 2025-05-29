@@ -19,6 +19,7 @@ Proyecto de Creación Multimedia Interactiva de la Facultad de Bellas Artes de l
 **Estilo/género:** Juego infantil.
 
 **Logotipo:** 
+
 ![Ilustración_sin_título (3)](https://github.com/user-attachments/assets/f94a75ac-51c1-4544-b353-0828fc3698cf)
 
 
@@ -34,7 +35,9 @@ Proyecto de Creación Multimedia Interactiva de la Facultad de Bellas Artes de l
 
 *Medios*:
 
--   Github https://github.com/AnaRuiz05
+-   Github: https://github.com/AnaRuiz05
+-   Itch.io: https://anaruiz2005.itch.io/control-pizza
+  
   ![Ilustración_sin_título 1](https://github.com/user-attachments/assets/baad1988-6baa-42b3-b9c4-0af07759df5c)
 
     
