@@ -1,146 +1,120 @@
-## (Nombre del proyecto)
+## Pizza Control.
 
-Proyecto de Creación Multimedia Interactiva de la  Facultad de Bellas Artes de la Univesidad de Granada
+[](https://github.com/mgea/cmi/blob/master/readme.md#nombre-del-proyecto)
 
+Proyecto de Creación Multimedia Interactiva de la Facultad de Bellas Artes de la Universidad de Granada
 
+# 1 Datos
 
-# 1 Datos 
+[](https://github.com/mgea/cmi/blob/master/readme.md#1-datos)
 
+**Título** : Pizza Control.
 
+**Web:** (url github.io)
 
-**Titulo** : MI Proyecto(nombre)
+**Autor:** Ana Ruiz Escobar.
 
-**Web:**   (url github.io)
+**Resumen** : Este proyecto trata sobre realizar distintos tipos de pizzas siguiendo la comanda de ciertos clientes. Todo ello pasando por distintas fases que deberán ser superadas para acabar el mismo.
 
-**Autor:**  (Nombre apellidos)
+**Estilo/género:** Juego infantil.
 
-**Resumen** : Este proyecto busca contar las hitorias de migrantes jóvenes, siendo ellos mismos los protagonistas. Esta será una compilación de relatos y crónicas de sus experiencias, exponiendo su lucha de identidad y sentido de pertenencia, herencia migratoria, entre otros temas que abrirán un debate del tema.
+**Logotipo:** ![enter image description here](https://photos.app.goo.gl/kbkS2UiwQaAjfM9UA)
 
-**Estilo/género:**  Novela / juego / portfolio / documental... etc.
+**Resolución:** 1123x794px a tamaño fijo.
 
-**Logotipo** : (insertar imagen y breve justificación, si  tiene) 
+**Probado en:** Google Chrome.
 
-(insertar imágenes a resolucion de 100px alto)
-
-**Resolución:** 800x600px responsivo/o tamaño fijo (indicar la que has aplicado, y si es reescalable)
-
-**Probado en:**   (indicar dónde has probado que funciona: ej. Google Chrome / MS Edge... /móviles android )
-
-**Tamaño proyecto:** 14MB 
+**Tamaño del proyecto:**  149.32 MB.
 
 **Licencia** Este proyecto tiene una Licencia CC Reconocimiento Compartir igual (CC BY-SA)
 
-**Fecha** : 14/05/2020
+**Fecha** : 28/05/2025
 
-**Medios** (donde se tiene presencia relacionada):
+*Medios*:
 
-- Github:
-- Twitter
-- Instagram
+-   Github https://github.com/AnaRuiz05
+    
 
+# 2. Memoria del proyecto
 
-![girl](https://github.com/mgea/cmi20/blob/master/WalkingGirl_front01.png)
+[](https://github.com/mgea/cmi/blob/master/readme.md#2-memoria-del-proyecto)
 
-# 2. Memoria del proyecto 
+### 2.1 Guión gráfico:
 
-### 2.1 Storyboard: 
+![enter image description here](https://photos.app.goo.gl/g1dCNhtREQPUPJ9e9)
 
-
-
-(narra brevemente lo que sucede en tu proyecto, puedes usar 3-4 imágenes de apoyo)
+La idea principal era que un cliente llegase a tu local con una comanda y que el proceso para realizar el pedido fuera: poner los ingredientes sobre masa, salsa y queso, pasarla por el horno, cortarla y, por último, entregarla.
 
 
+### 2.2. Esquema de navegación
 
-### 2.2. Esquema de navegación 
-
-
-
-(imagen con las distintas pantallas de navegación, usa draw.io o cualquier programa de dibujo)
-
-
-
-
+![enter image description here](https://photos.app.goo.gl/iFwVMjWg3jqFB8YQ7)
 
 
 
 # 3. Metodología
 
-Metodología de desarrollo de productos multimedia basado en una metodología de UX (User Experience)
+[](https://github.com/mgea/cmi/blob/master/readme.md#3-metodolog%C3%ADa)
 
-
+Metodología de desarrollo de productos multimedia basada en una metodología de UX (User Experience)
 
 ### Etapa 1: Ideación de proyecto
 
-**Investigación de campo** (propuestas inspiradoras para el proyecto)
+[](https://github.com/mgea/cmi/blob/master/readme.md#etapa-1-ideaci%C3%B3n-de-proyecto)
 
-- Portfolio [Leonardi Web page](http://www.rleonardi.com/interactive-resume/) para idear cómo organizar el material
-- 
+**Investigación de campo:**  Gran pizza, Buena pizza.
 
+**Motivación de la propuesta**
 
+Mi motivación para realizar este proyecto ha sido que infantes puedan divertirse y desarrollar capacidades cognitivas, para crear y seguir instrucciones y así motivar su desarrollo.
 
-**Motivación de la propuesta** 
+**Público/audiencia**
 
-Este  proyecto es interesante porque ... 
-
-
-
-**Publico / audiencia**
-
-- Orientado a 
-
-
-
-
+-   Orientado a niños.
 
 ### Etapa 2: Desarrollo / actividades realizadas
 
-(qué soluciones has planteado y cómo se han resuelto: juego, galería de fotos, grabación de video, etc.)
+-   *Juego:* En un principio el juego iba a ser más interactivo y tener más funciones, quería un acabado un tanto diferente. Pensé en que los objetos pudiesen arrastrarse, que hubiesen más animaciones, etc; pero conforme empecé a programar el juego me encontré con una serie de complicaciones que me hicieron barajar otras opciones y terminé implementando otra dinámica basada en botones y variables.
 
-- Juego. 
-- Video 
-- Instrucciones y ayuda al usuario 
-- Menús y elementos de navegación (botones)
-- etc.
+-   *Video:* Las distintas animaciones que aparecen en el juego, más concretamente en el teaser, fueron sencillas de realizar y conseguí los resultados insertando nodos y otras herramientas de godot.
 
+-   *Instrucciones y ayuda al usuario:* Siguiendo las indicaciones del teaser, el espectador puede intuir qué es lo que tiene que hacer de forma clara. Una vez dentro del juego, los botones están muy bien visibles y claros de detectar, además, muchos de ellos tienen formas sencillas de identificar y entender para los niños.
 
+-   *Menús y elementos de navegación (botones):* Mi proyecto se basa completamente en el uso de botones, para ello he tenido que programar distintas y numerosas funciones como por ejemplo el que al pulsar un botón en una escena concreta, se vea reflejado en la aparicion de una imagen/animación en otra. Siguiendo con este ejemplo, también hay botones que al ser pulsados una cantidad de veces concreta, da un resultado dintinto.
 
 ### Etapa 3: Problemas identificados
 
-(que consideras que no  funciona correctamente y por qué )
+Considero que el juego debería ser capaz de detectar sin la comanda se ha realizado correctamente o no. Además, podría haber un botón de acceso al menú desde cualquier escena del juego, cosa que no está.
+
+# 4. Conclusiones
+La realización de este proyecto ha sido lenta, ardua y muy gratificante. Al principio, concebir la idea de crear un juego desde cero se me hacía complicado, nunca había hecho nada de programación y me daba miedo afrontar la asignatura. Sin embargo, empecé a entender mejor el funcionamiento de godot y, finalmente, conseguí acabar mi proyecto.
+
+En cuanto al resultado final del mismo, estoy satisfecha con lo realizado, puesto que el simple hecho de haber afrontado algo que no conocía para nada y haberlo sacado hacia delante, ya me gratifica personalmente. Es cierto que considero un tanto simple la mecánica del juego y sus elementos, además de que, como ya he mencionado anteriormente, hay ciertos aspectos que podían haberse incluido o mejorado.
+
+Por lo demás, estoy muy orgullosa del resultado y de mi progreso con godot y la asignatura, he arendido mucho.
 
 
 
-# 4. Conclusiones 
+# 5 Referencias
 
-(explica brevemente tu valoración, problemas que has detectado y que te gustaría hacer o mejorar en el futuro )
+[](https://github.com/mgea/cmi/blob/master/readme.md#5-referencias)
 
+**Artículos y blogs**
 
-
-
-
-
-
-# 5 Referencias 
-
-**Artículos y blogs ** 
-
-- Crofts, S., Fox, M., Retsema, A. and Williams, B. (2005) *Podcasting: A new technology in search of viable business models*First Monday, 10(9). https://doi.org/10.5210/fm.v10i9.1273. Recuperado el 8 de abril de 2020 de: https://journals.uic.edu/ojs/index.php/fm/article/view/1273/1193
+-  *Godot Dots* https://docs.godotengine.org/es/4.x/about/introduccion.html
 
 **Recursos y materiales audiovisuales:**
 
-* Musica:  
-* Imágenes:  
-* Tipografía
+-   *Música:* pixabay
+-   *Imágenes:* pixabay
+-   *Tipografía:* fontbase
 
 **Herramientas utilizadas**
 
-- Hippani Animator 5.1
-- 
+-  Godot Engine 4.4
 
+Mayo de 2025## (Control Pizza)
 
+[](https://github.com/mgea/cmi/blob/master/readme.md#nombre-del-proyecto)
 
-(imagen de la licencia, copiar y pegar aquí la correcta)
-
-https://creativecommons.org/licenses/?lang=es
-
-Mayo 2023
+Proyecto de Creación Multimedia Interactiva de la Facultad de Bellas Artes de la Universidad de Granada
